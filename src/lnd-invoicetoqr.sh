@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## Grundlegende Variablen definieren, diese können/müssen systemspezifisch angepasst werden.
-var_programDir=/home/weberd/lnd
-var_macaroonPath=/home/weberd/lnd/invoice.macaroon
-var_tlsCertPath=/home/weberd/lnd/tls.cert
-var_rpcServer=178.26.165.115:10009
+var_programDir=/home/<username>/lnd
+var_macaroonPath=/home/<username>/lnd/invoice.macaroon
+var_tlsCertPath=/home/<username>/lnd/tls.cert
+var_rpcServer=<ipadress>:10009
 
 ## Folgende Variablen nicht aendern, ausser du weisst wirklich was du tust!
 var_invoiceSat=$1
