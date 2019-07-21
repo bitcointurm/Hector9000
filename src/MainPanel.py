@@ -15,6 +15,10 @@ from kivy.clock import Clock
 from database import Database
 from HectorConfig import config
 
+## Für LND-Script (if file exists)
+from pathlib import Path
+import subprocess
+
 from HectorHardware import HectorHardware
 
 
@@ -106,6 +110,57 @@ class MainPanel(Screen):
             print("no drinks found.")
             return
 
+
+        ### Beginn LND-Zahlung
+
+        subprocess.call("/home/pi/Hector9000/src/lnd-invoicetoqr.sh")
+
+#        my_file = Path("img/temp/tempQRCode.png")
+
+#        while not my_file.is_file():
+        time.sleep(5)
+#	print("Wartezeit vorbei, oeffne Popup")
+
+        ### Popup
+        root = BoxLayout(orientation='vertical')
+        root2 = BoxLayout()
+        root2.add_widget(Image(source='img/temp/tempQRCode.png'))
+        root2.add_widget(
+            Label(text='Gimme some Satoshi\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
+        root.add_widget(root2)
+
+        contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
+        root.add_widget(contentOK)
+
+        contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
+        root.add_widget(contentCancel)
+
+        popup = Popup(title='PAY HERE !!!', content=root,
+                      auto_dismiss=False)
+
+        def closeme(button):
+            popup.dismiss()
+            Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
+
+        contentOK.bind(on_press=closeme)
+
+        def cancelme(button):
+            popup.dismiss()
+
+        contentCancel.bind(on_press=cancelme)
+
+        popup.open()
+
+        ## Zahlung prüfen
+
+        my_file = Path("img/temp/ok.txt")
+
+        while not my_file.is_file():
+            time.sleep(1)
+
+        popup.dismiss()
+
+        ### Ende LND-Zahlung
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(Image(source='img/empty-glass.png'))
@@ -127,7 +182,7 @@ class MainPanel(Screen):
             Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
 
         contentOK.bind(on_press=closeme)
-        
+
         def cancelme(button):
             popup.dismiss()
 
