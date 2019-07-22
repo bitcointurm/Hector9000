@@ -1,9 +1,9 @@
 ## Configuration for lnd-invoicetoqr.sh
 
 ## Basic variables, have to be changed according system-specific
-var_programDir=/home/pi/Hector9000/src
-var_macaroonPath=/home/pi/lnd/invoice.macaroon
-var_tlsCertPath=/home/pi/lnd/tls.cert
+var_programDir=/home/<username>/Hector9000/src
+var_macaroonPath=/home/<username>/lnd/invoice.macaroon
+var_tlsCertPath=/home/<username>/lnd/tls.cert
 var_rpcServer=<lnd-node-ip-and-port>
 var_invoiceSat=<amount-in-sat>
 var_invoiceMemo=<memo-as-string>
