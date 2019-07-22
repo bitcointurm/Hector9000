@@ -111,19 +111,33 @@ class MainPanel(Screen):
             return
 
 
+<<<<<<< HEAD
         ### Begin LND-Invoice
 
         subprocess.call("lnd/lnd-invoicetoqr.sh")
+=======
+        ### Beginn LND-Zahlung
+
+        subprocess.call("/home/pi/Hector9000/src/lnd-invoicetoqr.sh")
+>>>>>>> 7d000ccbdc1c4d992763a87ec9e2fe1d1998c78a
 
 #        my_file = Path("img/temp/tempQRCode.png")
 
 #        while not my_file.is_file():
         time.sleep(5)
+<<<<<<< HEAD
+=======
+#	print("Wartezeit vorbei, oeffne Popup")
+>>>>>>> 7d000ccbdc1c4d992763a87ec9e2fe1d1998c78a
 
         ### Popup
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
+<<<<<<< HEAD
         root2.add_widget(Image(source='lnd/temp/tempQRCode.png'))
+=======
+        root2.add_widget(Image(source='img/temp/tempQRCode.png'))
+>>>>>>> 7d000ccbdc1c4d992763a87ec9e2fe1d1998c78a
         root2.add_widget(
             Label(text='Gimme some Satoshi\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
         root.add_widget(root2)
@@ -150,16 +164,26 @@ class MainPanel(Screen):
 
         popup.open()
 
+<<<<<<< HEAD
         ## Check payment
 
         my_file = Path("lnd/temp/ok.txt")
+=======
+        ## Zahlung prüfen
+
+        my_file = Path("img/temp/ok.txt")
+>>>>>>> 7d000ccbdc1c4d992763a87ec9e2fe1d1998c78a
 
         while not my_file.is_file():
             time.sleep(1)
 
         popup.dismiss()
 
+<<<<<<< HEAD
         ### End LND-Invoice
+=======
+        ### Ende LND-Zahlung
+>>>>>>> 7d000ccbdc1c4d992763a87ec9e2fe1d1998c78a
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(Image(source='img/empty-glass.png'))
