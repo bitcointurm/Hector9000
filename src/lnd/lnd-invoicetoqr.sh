@@ -80,7 +80,7 @@ fi
 echo "Beginn Schleife" >> $var_logPath
 
 COUNTER=0
-while [  $COUNTER -lt 2 ]; do
+while [  $COUNTER -lt 12 ]; do
   var_paymentState=$($var_lncliCommand lookupinvoice $var_rHash | grep state | cut -d '"' -f 4)
 ## Logging
 echo "lookupinvoice" >> $var_logPath
