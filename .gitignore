@@ -93,8 +93,8 @@ src/nohup\.out
 ## Hector9000 specific excludes
 
 *.bak
-src/img/temp/
-src/lnd-invoicetoqr.config
-src/lnd-invoicetoqr.log
-lnd/*.macaroon
-lnd/tls.cert
+src/lnd/temp/
+*lnd-invoicetoqr.config
+*.log
+*.macaroon
+*.cert
