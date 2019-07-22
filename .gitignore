@@ -88,3 +88,13 @@ src/nohup\.out
 *.py-0
 
 *.py-1
+
+
+## Hector9000 specific excludes
+
+*.bak
+src/img/temp/
+src/lnd-invoicetoqr.config
+src/lnd-invoicetoqr.log
+lnd/*.macaroon
+lnd/tls.cert
