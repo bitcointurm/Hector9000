@@ -20,12 +20,6 @@ rm -f $var_tempPath/ok.txt >> $var_logPath
 rm -f $var_tempPath/tempQRCode.png >> $var_logPath
 rm -f $var_tempPath/tempInvoice.txt >> $var_logPath
 
-## Check if there is an Invoice Memo available, if so
-## reformat for styling reasons (only to be used for cli output)
-if [[ "$var_invoiceMemo" ]]; then
-  var_invoiceMemo=", Memo: $var_invoiceMemo"
-fi
-
 ## Check if amount is set. If not, exit.
 if [ $var_invoiceSat -eq 0 ]
   then
@@ -39,7 +33,7 @@ if [ $var_invoiceSat -eq 0 ]
 echo "invoicesat prüfung abgeschlossen" >> $var_logPath
 
   ## Create Invoice and print all iformation (mainly payment_request and r_hash) to file
-	$var_lncliCommand addinvoice $var_invoiceSat --memo "$2" > $var_tempPath/tempInvoice.txt
+	$var_lncliCommand addinvoice --amt $var_invoiceSat --memo "$var_invoiceMemo" > $var_tempPath/tempInvoice.txt
 
 ## Logging
 echo "lnclicommand" >> $var_logPath
@@ -78,6 +72,12 @@ fi
 
 ## Logging
 echo "Beginn Schleife" >> $var_logPath
+
+## Check if there is an Invoice Memo available, if so
+## reformat for styling reasons (only to be used for cli output)
+if [[ "$var_invoiceMemo" ]]; then
+  var_invoiceMemo=", Memo: $var_invoiceMemo"
+fi
 
 COUNTER=0
 while [  $COUNTER -lt 12 ]; do
