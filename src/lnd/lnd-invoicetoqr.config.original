@@ -1,0 +1,25 @@
+## Configuration for lnd-invoicetoqr.sh
+## ! This file MUST be in the same directory as lnd-invoicetoqr.sh !
+
+## Basic variables, have to be changed according system-specific
+var_programDir=/home/<username>/Hector9000/src
+var_lndDir=/home/<username>/Hector9000/src/lnd
+var_macaroonPath=$var_lndDir/invoice.macaroon
+var_tlsCertPath=$var_lndDir/tls.cert
+
+## Node-Connection
+var_rpcServer=<lnd-node-ip-and-port>
+
+## Invoice-Data
+var_invoiceSat=<amount-in-sat>
+var_invoiceMemo=<memo-as-string>
+
+## Variables to be used by the script
+## Do not change, unless you know what you are doing!
+var_paymentState=0 ## Just to be sure...
+var_tempPath=$var_lndDir/temp
+var_lncliCommand="$var_lndDir/lncli --macaroonpath $var_macaroonPath --tlscertpath $var_tlsCertPath --rpcserver $var_rpcServer"
+
+## Log-File
+var_logPath=$var_lndDir/lnd-invoicetoqr.log
+
