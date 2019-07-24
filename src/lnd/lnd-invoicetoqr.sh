@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/#!/usr/bin/env bash
 
 ## Read Configuration-File
 . $PWD/lnd-invoicetoqr.config
