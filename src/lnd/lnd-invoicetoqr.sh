@@ -1,10 +1,10 @@
-#!/#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 ## Read Configuration-File
 . $PWD/lnd-invoicetoqr.config
 
 ## Start Logging
-echo "####START" >> $var_logPath
+echo "####START InvoiceToQR" >> $var_logPath
 
 ## Logging
 echo "Variablen gesetzt" >> $var_logPath
@@ -70,51 +70,7 @@ fi
 ## sleep between two lookupinvoice should be changed to meet internet-connectivity/speed of command
 ## This Speedtest could be checked by the script if needed in a future release
 
-## Logging
-echo "Beginn Schleife" >> $var_logPath
-
-## Check if there is an Invoice Memo available, if so
-## reformat for styling reasons (only to be used for cli output)
-if [[ "$var_invoiceMemo" ]]; then
-  var_invoiceMemo=", Memo: $var_invoiceMemo"
-fi
-
-COUNTER=0
-while [  $COUNTER -lt 12 ]; do
-  var_paymentState=$($var_lncliCommand lookupinvoice $var_rHash | grep state | cut -d '"' -f 4)
-## Logging
-echo "lookupinvoice" >> $var_logPath
-
-  if [[ $var_paymentState = "SETTLED" ]]
-  then
-                echo ""
-                echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-                echo ""
-                echo "Invoice bezahlt, Betrag: $var_invoiceSat Satoshi$var_invoiceMemo"
-                echo ""
-                echo "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-                touch $var_tempPath/ok.txt
-## Logging
-echo "payment settled" >> $var_logPath
-
-
-                exit 0
-  else
-                echo "Warte auf Zahlung... ($COUNTER)"
-## Logging
-echo "warte auf zahlung $COUNTER" >> $var_logPath
-
-                sleep 5
-  fi
-let COUNTER=COUNTER+1
-done
 
 ## Logging
-echo "ENDE Schleife" >> $var_logPath
-
-## Remove Temporary-Directory
-#rm -rf $var_tempPath
-
-## Logging
-echo "ENDE SCRIPT" >> $var_logPath
+echo "####END InvoiceToQR" >> $var_logPath
 exit 0
