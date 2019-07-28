@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Read Configuration-File
-. $PWD/lnd-invoicetoqr.config
+. lnd/lnd-invoicetoqr.config
 
 ## Start Logging
 echo "####START InvoiceToQR" >> $var_logPath

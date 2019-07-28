@@ -110,86 +110,76 @@ class MainPanel(Screen):
             print("no drinks found.")
             return
 
-
-        ### Begin LND-Invoice
-
+        ## Start Script to create Invoice
+        print("start lnd-invoicetoqr.sh")
         subprocess.call("lnd/lnd-invoicetoqr.sh")
+        print("end lnd-invoicetoqr.sh")
 
-        my_file = Path("lnd/temp/tempQRCode.png")
-        while not my_file.is_file():
-            time.sleep(5)
-
-        ### Popup
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(Image(source='lnd/temp/tempQRCode.png'))
         root2.add_widget(
-            Label(text='Gimme some Satoshi\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
-        root.add_widget(root2)
-
-        contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
-        root.add_widget(contentOK)
-
-        contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
-        root.add_widget(contentCancel)
-
-        popup = Popup(title='PAY HERE !!!', content=root,
-                      auto_dismiss=False)
-
-        def closeme(button):
-            popup.dismiss()
-            Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
-
-        contentOK.bind(on_press=closeme)
-
-        def cancelme(button):
-            popup.dismiss()
-
-        contentCancel.bind(on_press=cancelme)
-
-        popup.open()
-
-        ## Check payment
-
-        my_file = Path("lnd/temp/ok.txt")
-
-        while not my_file.is_file():
-            time.sleep(1)
-
-        popup.dismiss()
-
-        ### End LND-Invoice
-
-        root = BoxLayout(orientation='vertical')
-        root2 = BoxLayout()
-        root2.add_widget(Image(source='img/empty-glass.png'))
-        root2.add_widget(
             Label(text='Please be sure\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
         root.add_widget(root2)
 
-        contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
-        root.add_widget(contentOK)
+        ## This was commented out to be sure the user only gets a drink after paying the bill.
+        #contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
+        #root.add_widget(contentOK)
 
         contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
         root.add_widget(contentCancel)
 
-        popup = Popup(title='LOOK HERE !!!', content=root,
+        popup = Popup(title='Not your coins, not your cocktail :-)', content=root,
                       auto_dismiss=False)
 
-        def closeme(button):
-            popup.dismiss()
-            Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
+        ## This was commented out to be sure the user only gets a drink after paying the bill.
+        #def closeme(button):
+        #    popup.dismiss()
+        #    Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
 
-        contentOK.bind(on_press=closeme)
+        ## This was commented out to be sure the user only gets a drink after paying the bill.
+        #contentOK.bind(on_press=closeme)
 
         def cancelme(button):
             popup.dismiss()
 
         contentCancel.bind(on_press=cancelme)
 
+        ## Beginn Function to periodically check the payment using lnd-checkinvoice1.sh
+        def checkPayment(parent):
+
+            print("start check script")
+
+            ## while loop to check if lnd-checkinvoice1.sh returns SETTLED, if not wait for a second and start over
+            paymentSettled = False
+            while paymentSettled == False:
+                ## run lnd-checkinvoice1.sh and write output to variable s
+                s = subprocess.check_output(["sh","lnd/lnd-checkinvoice1.sh"])
+                print(s)
+
+                ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
+                if b'SETTLED' in s:
+                    paymentSettled = True
+                    popup.dismiss()
+                    Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
+                else:
+                    ## if not 'SETTLED' wait a second and start over
+                    paymentSettled = False
+                    time.sleep(1)
+                pass
+            pass
+
+            print("end check script")
+            ## End Function to periodically check the payment using lnd-checkinvoice1.sh
+
+        ## start 'checkPayment-loop' when loading popup
+        popup.bind(on_open=checkPayment)
+
         popup.open()
 
+
     def doGiveDrink(self, drink, intervaltime):
+
         root = BoxLayout(orientation='vertical')
         content = Label(text='Take a break -- \nYour \n\n' + self.drinkOnScreen[drink]["name"]+'\n\nwill be mixed.', font_size='40sp')
         root.add_widget(content)
