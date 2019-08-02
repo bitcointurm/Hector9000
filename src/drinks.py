@@ -2,14 +2,15 @@
 
 drink_list = [
     {
-        "name": "...under\nconstruction",
+        "name": "Wasser",
         "recipe": [
+	    ("water", 80)
         ]
     }, {
         "name": "Virgin Sunrise",
         "recipe": [
             ("oj", 160),
-            ("gren", 8)
+            ("water", 8)
         ]
     }, {
         "name": "Exotic",
@@ -70,7 +71,7 @@ drink_list = [
         "recipe": [
             ("oj", 120),
             ("bacardi", 40),
-            ("gren", 8)
+            ("water", 8)
         ]
     }, {
             "name": "Ts 0 (1:6)",
@@ -94,7 +95,7 @@ drink_list = [
 
 # "NAME":("NICENAME", ISWITHALCOHOL)
 ingredients = {
-    "gren": ("Grenadine", False),
+    "water": ("Wasser", False),
     "cocos": ("Cocos", False),
     "lemonjuice": ("Lemon Juice", False),
     "bacardi": ("Bacardi", True),

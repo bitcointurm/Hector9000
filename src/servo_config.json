@@ -2,7 +2,7 @@
 	"pump_1": {
 		"name": "Pump 1",
 		"channel": 0,
-		"value": "gren"
+		"value": "water"
 	},
 	"pump_2": {
 		"name": "Pump 2",
