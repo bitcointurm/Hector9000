@@ -18,7 +18,7 @@ drink_list = [
             ("oj", 90),
             ("pineapple", 60),
             ("mango", 30),
-            ("curacao", 16)
+            ("curacao", 30)
             #("cocos", 16)
         ]
     }, {
