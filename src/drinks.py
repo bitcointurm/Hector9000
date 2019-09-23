@@ -7,10 +7,11 @@ drink_list = [
 	    ("water", 80)
         ]
     }, {
-        "name": "Virgin Sunrise",
+        "name": "Matt Colado",
         "recipe": [
-            ("oj", 140),
-            ("water", 10)
+            ("rum", 60),
+            ("cocos", 60),
+            ("pineapple", 180)
         ]
     }, {
         "name": "Exotic",
