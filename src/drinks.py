@@ -10,7 +10,7 @@ drink_list = [
         "name": "Virgin Sunrise",
         "recipe": [
             ("oj", 160),
-            ("water", 8)
+            ("water", 10)
         ]
     }, {
         "name": "Exotic",
