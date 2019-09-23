@@ -143,6 +143,7 @@ class MainPanel(Screen):
         def cancelme(button):
             popup.dismiss()
 
+        #Button cancel payment, is not working right now
         contentCancel.bind(on_press=cancelme)
 
         ## Beginn Function to periodically check the payment using lnd-checkinvoice1.sh

@@ -9,12 +9,12 @@ drink_list = [
     }, {
         "name": "Matt Colado",
         "recipe": [
-            ("rum", 60),
-            ("cocos", 60),
-            ("pineapple", 180)
+            ("rum", 40),
+            ("cocos", 40),
+            ("pineapple", 120)
         ]
     }, {
-        "name": "Exotic",
+        "name": "nasty ass honey badger",
         "recipe": [
             ("oj", 90),
             ("pineapple", 60),
