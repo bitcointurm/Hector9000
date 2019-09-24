@@ -2,7 +2,7 @@
 
 drink_list = [
     {
-        "name": "Wasser",
+        "name": "Water",
         "recipe": [
 	    ("water", 80)
         ]
@@ -14,7 +14,7 @@ drink_list = [
             ("pineapple", 120)
         ]
     }, {
-        "name": "nasty ass honey badger",
+        "name": "Nasty Ass Honey Badger",
         "recipe": [
             ("oj", 90),
             ("pineapple", 60),
@@ -35,6 +35,14 @@ drink_list = [
         "recipe": [
             ("mate", 100),
             ("mango", 50),
+            ("lemonjuice", 20)
+        ]
+    }, {
+        "name": "Bavarian Badger",
+        "recipe": [
+            ("beer", 150),
+            ("gin", 40),
+            ("grenadine", 12),
             ("lemonjuice", 20)
         ]
     }, {
@@ -75,7 +83,7 @@ drink_list = [
             ("water", 8)
         ]
     }, {
-            "name": "Ts 0 (1:6)",
+        "name": "Ts 0 (1:6)",
         "recipe": [
             ("bacardi", 20),
             ("mate", 120)
@@ -96,13 +104,14 @@ drink_list = [
 
 # "NAME":("NICENAME", ISWITHALCOHOL)
 ingredients = {
-    "water": ("Wasser", False),
+    "water": ("Water", False),
     "cocos": ("Cocos", False),
     "lemonjuice": ("Lemon Juice", False),
     "bacardi": ("Bacardi", True),
     "rum": ("Rum", True),
     "vodka": ("Vodka", True),
     "gin": ("Gin", True),
+    "beer": ("Beer", True),
     "curacao": ("Blue Curacao", False),
     "mango": ("Mango", False),
     "pineapple": ("Pineapple", False),
@@ -110,6 +119,7 @@ ingredients = {
     "cola": ("Cola", False),
     "oj": ("Orange Juice", False),
     "mate": ("Mate", False),
+    "grenadine": ("Grenadine", False),	
 }
 
 
