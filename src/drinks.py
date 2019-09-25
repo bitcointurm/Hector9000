@@ -2,8 +2,10 @@
 
 drink_list = [
     {
-        "name": "...under\nconstruction",
+        "name": "Craigs Wright is a fraud",
         "recipe": [
+            ("grenadine", 22),
+            ("lemonjuice", 20)
         ]
     }, {
         "name": "Matt Colado",
