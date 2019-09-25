@@ -18,7 +18,7 @@ drink_list = [
         ]
     }, {
         "name": "Nasty Ass\nHoney Badger",
-        "sound": "/home/pi/Music/TestRaspi.mp3",
+        "sound": "/home/pi/Music/honeybadger.mp3",
         "recipe": [
             ("lime", 10),
             ("coco", 20),
