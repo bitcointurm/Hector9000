@@ -141,11 +141,11 @@ class MainPanel(Screen):
         #contentOK.bind(on_press=closeme)
 
         def cancelme(button):
-            print("button pressed")
+            print("cancel button pressed")
             popup.dismiss()
 
         #Button cancel payment, is not working right now
-        contentCancel.bind(on_press=cancelme)
+
 
         ## Beginn Function to periodically check the payment using lnd-checkinvoice1.sh
         def checkPayment(parent):
@@ -158,6 +158,7 @@ class MainPanel(Screen):
                 ## run lnd-checkinvoice1.sh and write output to variable s
                 s = subprocess.check_output(["sh","lnd/lnd-checkinvoice1.sh"])
                 print(s)
+                contentCancel.bind( on_press=cancelme )
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
                 if b'SETTLED' in s:
