@@ -3,12 +3,14 @@
 drink_list = [
     {
         "name": "Craig Wright\nis a fraud",
+        "sound": "/home/pi/Music/TestRaspi.mp3",
         "recipe": [
             ("grenadine", 22),
             ("lemonjuice", 20)
         ]
     }, {
         "name": "Matt Colado",
+        "sound": "/home/pi/Music/TestRaspi.mp3",
         "recipe": [
             ("rum", 40),
             ("coco", 40),
@@ -16,6 +18,7 @@ drink_list = [
         ]
     }, {
         "name": "Nasty Ass\nHoney Badger",
+        "sound": "/home/pi/Music/TestRaspi.mp3",
         "recipe": [
             ("lime", 10),
             ("coco", 20),
@@ -25,6 +28,7 @@ drink_list = [
         ]
     }, {
         "name": "Bavarian Badger",
+        "sound": "/home/pi/Music/TestRaspi.mp3",
         "recipe": [
             ("gin", 40),
             ("grenadine", 42),

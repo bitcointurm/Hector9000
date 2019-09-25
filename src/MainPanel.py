@@ -196,7 +196,7 @@ class MainPanel(Screen):
         popup = Popup(title='Life, the Universe, and Everything. There is an answer.', content=root,
                       auto_dismiss=False)
         mixer.init()
-        mixer.music.load("/home/pi/Music/TestRaspi.mp3")
+        mixer.music.load(self.drinkOnScreen[drink]["sound"])
         mixer.music.play()
 
 
