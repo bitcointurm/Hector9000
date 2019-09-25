@@ -66,25 +66,25 @@ drink_list = [
         "name": "Bo",
         "recipe": [
             ("oj", 120),
-            ("bacardi", 40)
+            ("rum", 40)
         ]
     }, {
         "name": "Bs",
         "recipe": [
             ("oj", 120),
-            ("bacardi", 40),
+            ("rum", 40),
             ("water", 8)
         ]
     }, {
         "name": "Ts 0 (1:6)",
         "recipe": [
-            ("bacardi", 20),
+            ("rum", 20),
             ("mate", 120)
         ]
     }, {
         "name": "Ts 1",
         "recipe": [
-            ("bacardi", 40),
+            ("rum", 40),
             ("mate", 300)
         ]
     }, {
@@ -112,7 +112,6 @@ ingredients = {
     "tequila": ("tequila", True),
     "beer": ("Beer", True),
     "water": ("Water", True),
-    "bacardi": ("Bacardi", True),
 }
 
 
