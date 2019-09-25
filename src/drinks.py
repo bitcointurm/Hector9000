@@ -103,16 +103,16 @@ ingredients = {
     "triple": ("Triple", True),
     "grenadine": ("Grenadine", False),
     "coco": ("Coco", False),
-    "lemon": ("Lemon", False),
+    "lemonjuice": ("Lemonjuice", False),
     "pineapple": ("Pineapple", False),
-    "orange": ("orange", False),
+    "oj": ("oj", False),
     "lime": ("Lime", False),
     "almond": ("Almond", True),
     "cola": ("Cola", False),
-#   "grenadine": ("Grenadine", False),
-#   "cola": ("Cola", False),
-#   "tequila": ("tequila", False),
-#   "beer": ("Beer", True),
+    "tequila": ("tequila", True),
+    "beer": ("Beer", True),
+    "water": ("Water", True),
+    "bacardi": ("Bacardi", True),
 }
 
 

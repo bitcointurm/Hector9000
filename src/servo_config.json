@@ -32,7 +32,7 @@
 	"pump_7": {
 		"name": "Pump 7",
 		"channel": 6,
-		"value": "lemon"
+		"value": "lemonjuice"
 	},
 	"pump_8": {
 		"name": "Pump 8",
@@ -42,7 +42,7 @@
 	"pump_9": {
 		"name": "Pump 9",
 		"channel": 8,
-		"value": "orange"
+		"value": "oj"
 	},
 	"pump_10": {
 		"name": "Pump 10",
