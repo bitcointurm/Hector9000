@@ -161,9 +161,10 @@ class MainPanel(Screen):
                 print(s)
                 counter +=1
                 print( counter )
-                if counter > 60:
-                    Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
+                if counter > 20:
                     popup.dismiss()
+                    Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
+
 
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
