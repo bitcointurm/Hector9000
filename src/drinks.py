@@ -14,7 +14,7 @@ drink_list = [
             ("pineapple", 120)
         ]
     }, {
-        "name": "Nasty Ass Honey Badger",
+        "name": "Nasty Ass\nHoney Badger",
         "recipe": [
             ("oj", 90),
             ("pineapple", 60),
@@ -23,27 +23,20 @@ drink_list = [
             #("cocos", 16)
         ]
     }, {
-        "name": "PineMate",
-        "recipe": [
-            ("mate", 100),
-            ("pineapple", 75),
-            ("curacao", 16)
-            #("cocos", 20)
-        ]
-    }, {
-        "name": "Happy",
-        "recipe": [
-            ("mate", 100),
-            ("mango", 50),
-            ("lemonjuice", 20)
-        ]
-    }, {
         "name": "Bavarian Badger",
         "recipe": [
             ("beer", 150),
             ("gin", 40),
             ("grenadine", 12),
             ("lemonjuice", 20)
+        ]
+    }, {
+        "name": "...under\nconstruction",
+        "recipe": [
+        ]
+    }, {
+        "name": "...under\nconstruction",
+        "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
@@ -104,22 +97,22 @@ drink_list = [
 
 # "NAME":("NICENAME", ISWITHALCOHOL)
 ingredients = {
-    "water": ("Water", False),
-    "cocos": ("Cocos", False),
-    "lemonjuice": ("Lemon Juice", False),
-    "bacardi": ("Bacardi", True),
     "rum": ("Rum", True),
-    "vodka": ("Vodka", True),
     "gin": ("Gin", True),
-    "beer": ("Beer", True),
-    "curacao": ("Blue Curacao", False),
-    "mango": ("Mango", False),
+    "vodka": ("Vodka", True),
+    "triple": ("Triple", True),
+    "grenadine": ("Grenadine", False),
+    "coco": ("Coco", False),
+    "lemon": ("Lemon", False),
     "pineapple": ("Pineapple", False),
-    "tequila": ("tequila", False),
+    "orange": ("orange", False),
+    "lime": ("Lime", False),
+    "almond": ("Almond", True),
     "cola": ("Cola", False),
-    "oj": ("Orange Juice", False),
-    "mate": ("Mate", False),
-    "grenadine": ("Grenadine", False),	
+#   "grenadine": ("Grenadine", False),
+#   "cola": ("Cola", False),
+#   "tequila": ("tequila", False),
+#   "beer": ("Beer", True),
 }
 
 
