@@ -14,6 +14,7 @@ from kivy.uix.image import Image
 from kivy.clock import Clock
 from database import Database
 from HectorConfig import config
+from pygame import mixer
 
 ## Für LND-Script (if file exists)
 from pathlib import Path
@@ -170,7 +171,7 @@ class MainPanel(Screen):
                 elif (counter > 5):
                     paymentSettled = True
                     popup.dismiss()
-                    # Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
+                    Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
                 else:
                     ## if not 'SETTLED' wait a second and start over
                     paymentSettled = False
@@ -194,6 +195,10 @@ class MainPanel(Screen):
         root.add_widget(content)
         popup = Popup(title='Life, the Universe, and Everything. There is an answer.', content=root,
                       auto_dismiss=False)
+        mixer.init()
+        mixer.music.load(/home/pi/Music/TestRaspi.mp3)
+        mixer.music.play()
+
 
         def makeDrink(parentwindow):
             drinks = self.drinkOnScreen[drink]
