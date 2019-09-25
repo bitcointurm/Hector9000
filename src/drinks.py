@@ -2,15 +2,14 @@
 
 drink_list = [
     {
-        "name": "Water",
+        "name": "...under\nconstruction",
         "recipe": [
-	    ("water", 80)
         ]
     }, {
         "name": "Matt Colado",
         "recipe": [
             ("rum", 40),
-            ("cocos", 40),
+            ("coco", 40),
             ("pineapple", 120)
         ]
     }, {
@@ -25,7 +24,6 @@ drink_list = [
     }, {
         "name": "Bavarian Badger",
         "recipe": [
-            ("beer", 150),
             ("gin", 40),
             ("grenadine", 12),
             ("lemonjuice", 20)
@@ -63,29 +61,20 @@ drink_list = [
         "recipe": [
         ]
     }, {
-        "name": "Bo",
+        "name": "...under\nconstruction",
         "recipe": [
-            ("oj", 120),
-            ("bacardi", 40)
         ]
     }, {
-        "name": "Bs",
+        "name": "...under\nconstruction",
         "recipe": [
-            ("oj", 120),
-            ("bacardi", 40),
-            ("water", 8)
         ]
     }, {
-        "name": "Ts 0 (1:6)",
+        "name": "...under\nconstruction",
         "recipe": [
-            ("bacardi", 20),
-            ("mate", 120)
         ]
     }, {
-        "name": "Ts 1",
+        "name": "...under\nconstruction",
         "recipe": [
-            ("bacardi", 40),
-            ("mate", 300)
         ]
     }, {
         "name": "...under\nconstruction",
@@ -109,10 +98,10 @@ ingredients = {
     "lime": ("Lime", False),
     "almond": ("Almond", True),
     "cola": ("Cola", False),
-    "tequila": ("tequila", True),
-    "beer": ("Beer", True),
-    "water": ("Water", True),
-    "bacardi": ("Bacardi", True),
+ #   "tequila": ("tequila", True),
+ #   "beer": ("Beer", True),
+ #   "water": ("Water", True),
+ #   "bacardi": ("Bacardi", True),
 }
 
 
