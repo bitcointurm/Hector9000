@@ -16,11 +16,11 @@ drink_list = [
     }, {
         "name": "Nasty Ass\nHoney Badger",
         "recipe": [
-            ("oj", 90),
-            ("pineapple", 60),
-            ("mango", 30),
-            ("curacao", 30)
-            #("cocos", 16)
+            ("lime", 10),
+            ("coco", 20),
+            ("rum", 40),
+            ("gin", 80),
+            ("cola", 120)
         ]
     }, {
         "name": "Bavarian Badger",
