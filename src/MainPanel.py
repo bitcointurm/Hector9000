@@ -163,10 +163,14 @@ class MainPanel(Screen):
                 print( counter )
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
-                if (b'SETTLED' in s) or (counter > 5):
+                if (b'SETTLED' in s):
                     paymentSettled = True
                     popup.dismiss()
                     Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
+                else if (counter > 5):
+                    paymentSettled = True
+                    popup.dismiss()
+                    # Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
                 else:
                     ## if not 'SETTLED' wait a second and start over
                     paymentSettled = False
