@@ -167,7 +167,7 @@ class MainPanel(Screen):
                     paymentSettled = True
                     popup.dismiss()
                     Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
-                else if (counter > 5):
+                elif (counter > 5):
                     paymentSettled = True
                     popup.dismiss()
                     # Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
