@@ -160,10 +160,11 @@ class MainPanel(Screen):
                 s = subprocess.check_output(["sh","lnd/lnd-checkinvoice1.sh"])
                 print(s)
                 counter +=1
+                print( counter )
                 if counter > 60:
                     Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
                     popup.dismiss()
-                    print(counter)
+
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
                 if b'SETTLED' in s:
