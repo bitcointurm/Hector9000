@@ -27,7 +27,7 @@ drink_list = [
         "name": "Bavarian Badger",
         "recipe": [
             ("gin", 40),
-            ("grenadine", 32),
+            ("grenadine", 42),
             ("lemonjuice", 20)
         ]
     }, {
