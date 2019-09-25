@@ -141,6 +141,7 @@ class MainPanel(Screen):
         #contentOK.bind(on_press=closeme)
 
         def cancelme(button):
+            print("button pressed")
             popup.dismiss()
 
         #Button cancel payment, is not working right now

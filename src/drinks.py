@@ -2,7 +2,7 @@
 
 drink_list = [
     {
-        "name": "Craigs Wright is a fraud",
+        "name": "Craig Wright\nis a fraud",
         "recipe": [
             ("grenadine", 22),
             ("lemonjuice", 20)
