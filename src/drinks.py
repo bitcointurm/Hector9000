@@ -3,7 +3,7 @@
 drink_list = [
     {
         "name": "Bitcoin im Turm",
-        "sound": "/home/pi/Music/bitcoincountry.mp3",
+        "sound": "/home/pi/Music/Vitalik.m4a",
         "recipe": [
             ("rum", 150),
             ("gin", 20)
