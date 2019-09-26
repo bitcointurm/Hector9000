@@ -2,11 +2,11 @@
 
 drink_list = [
     {
-        "name": "Craig Wright\nis a fraud",
-        "sound": "/home/pi/Music/TestRaspi.mp3",
+        "name": "Bitcoin im Turm",
+        "sound": "/home/pi/Music/bitcoincountry.mp3",
         "recipe": [
-            ("grenadine", 22),
-            ("lemonjuice", 20)
+            ("rum", 150),
+            ("gin", 20)
         ]
     }, {
         "name": "Matt Colado",
