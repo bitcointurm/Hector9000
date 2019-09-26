@@ -3,10 +3,10 @@
 drink_list = [
     {
         "name": "Bitcoin im Turm",
-        "sound": "/home/pi/Music/TestRaspi.mp3",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
-            ("rum", 150),
-            ("gin", 20)
+            ("rum", 50),
+            ("gin", 5)
         ]
     }, {
         "name": "Matt Colado",
