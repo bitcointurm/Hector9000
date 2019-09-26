@@ -195,9 +195,11 @@ class MainPanel(Screen):
         root.add_widget(content)
         popup = Popup(title='Life, the Universe, and Everything. There is an answer.', content=root,
                       auto_dismiss=False)
-        mixer.init()
-        mixer.music.load(self.drinkOnScreen[drink]["sound"])
-        mixer.music.play()
+        
+        if (self.drinkOnScreen[drink]["sound"]):
+            mixer.init()
+            mixer.music.load(self.drinkOnScreen[drink]["sound"])
+            mixer.music.play()
 
 
         def makeDrink(parentwindow):
