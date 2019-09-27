@@ -4,6 +4,7 @@ drink_list = [
     {
         "name": "Bitcoin im Turm",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "image": "img/empty-glass.png",
         "recipe": [
             ("rum", 50),
             ("gin", 5)
@@ -11,6 +12,7 @@ drink_list = [
     }, {
         "name": "Matt Colado",
         "sound": "/home/pi/Music/TestRaspi.mp3",
+        "image": "img/empty-glass.png",
         "recipe": [
             ("rum", 40),
             ("coco", 40),
@@ -19,6 +21,7 @@ drink_list = [
     }, {
         "name": "Nasty Ass\nHoney Badger",
         "sound": "/home/pi/Music/honeybadger.mp3",
+        "image": "img/empty-glass.png",
         "recipe": [
             ("lime", 10),
             ("coco", 20),
@@ -29,6 +32,7 @@ drink_list = [
     }, {
         "name": "Bavarian Badger",
         "sound": "/home/pi/Music/TestRaspi.mp3",
+        "image": "img/empty-glass.png",
         "recipe": [
             ("gin", 40),
             ("grenadine", 42),
@@ -36,54 +40,67 @@ drink_list = [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
+        "image": "img/empty-glass.png",
         "recipe": [
         ]
     }

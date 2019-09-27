@@ -12,7 +12,7 @@ class MyScreenManager(ScreenManager):
     pass
 
 
-myfile = open('windowconf', 'r')
+myfile = open('window-image-conf', 'r')
 
 root_widget = Builder.load_string(myfile.read())
 
