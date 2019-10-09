@@ -4,7 +4,7 @@ drink_list = [
     {
         "name": "Bitcoin im Turm",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
-        "image": "img/empty-glass.png",
+        "image": "img/bitcoinimturm.png",
         "recipe": [
             ("rum", 50),
             ("gin", 5)
@@ -12,7 +12,7 @@ drink_list = [
     }, {
         "name": "Matt Colado",
         "sound": "/home/pi/Music/TestRaspi.mp3",
-        "image": "img/empty-glass.png",
+        "image": "img/bluematt.png",
         "recipe": [
             ("rum", 40),
             ("coco", 40),
@@ -119,7 +119,7 @@ ingredients = {
     "pineapple": ("Pineapple", False),
     "oj": ("oj", False),
     "lime": ("Lime", False),
-    "almond": ("Almond", True),
+    "soda": ("Soda", True),
     "cola": ("Cola", False),
  #   "tequila": ("tequila", True),
  #   "beer": ("Beer", True),
