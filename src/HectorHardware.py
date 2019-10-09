@@ -120,19 +120,19 @@ class HectorHardware:
         print("arm is in in position")
 
     def arm_pos(self):
-        if not devEnvironment:
-            pos = GPIO.input(self.arm)
-            print("arm_pos: %d" % pos)
+       # if not devEnvironment:
+       #     pos = GPIO.input(self.arm)
+       #     print("arm_pos: %d" % pos)
 
-            pos = (pos != 0)
-            if pos:
-                print("arm_pos = out")
-            else:
-                print("arm_pos = in")
-        else:
+       #     pos = (pos != 0)
+       #     if pos:
+       #         print("arm_pos = out")
+       #     else:
+       #         print("arm_pos = in")
+       # else:
             pos = 100
             print("arm_pos: %d" % pos)
-        return pos
+      #  return pos
 
     def scale_readout(self):
         if not devEnvironment:
