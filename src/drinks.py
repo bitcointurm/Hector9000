@@ -19,9 +19,9 @@ drink_list = [
             ("pineapple", 120)
         ]
     }, {
+        "image": "img/honigdachs.png",
         "name": "Nasty Ass\nHoney Badger",
         "sound": "/home/pi/Music/honeybadger.mp3",
-        "image": "img/honigdachs.png",
         "recipe": [
             ("lime", 10),
             ("coco", 20),
