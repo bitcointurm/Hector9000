@@ -6,16 +6,11 @@
 # imports
 from __future__ import division
 
-# change below for testing
-devEnvironment = True
 devEnvironment = False
 
 import time
 import sys
-
-# change below for testing
 import Adafruit_PCA9685
-
 from HectorConfig import config
 
 # Uncomment to enable debug output.
@@ -125,7 +120,7 @@ class HectorHardware:
         print("arm is in in position")
 
     def arm_pos(self):
-       # if not devEnvironment:
+        if devEnvironment:
        #     pos = GPIO.input(self.arm)
        #     print("arm_pos: %d" % pos)
 
@@ -134,10 +129,10 @@ class HectorHardware:
        #         print("arm_pos = out")
        #     else:
        #         print("arm_pos = in")
-       # else:
+        else:
             pos = 100
             print("arm_pos: %d" % pos)
-      #  return pos
+        return pos
 
     def scale_readout(self):
         if not devEnvironment:
