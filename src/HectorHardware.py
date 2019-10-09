@@ -6,11 +6,16 @@
 # imports
 from __future__ import division
 
+# change below for testing
+devEnvironment = True
 devEnvironment = False
 
 import time
 import sys
+
+# change below for testing
 import Adafruit_PCA9685
+
 from HectorConfig import config
 
 # Uncomment to enable debug output.

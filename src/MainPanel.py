@@ -33,6 +33,15 @@ class MainPanel(Screen):
                                StringProperty(),
                                StringProperty()])
 
+    image = ListProperty([StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty()])
+
     buttonColor = ListProperty([ListProperty(),
                                 ListProperty(),
                                 ListProperty(),
@@ -92,6 +101,7 @@ class MainPanel(Screen):
         count = 0
         while count < countDrinksOnScreen:
             self.buttonText[count] = drinks[count]['name']
+            self.image[count] = drinks[count]['image']
             if self.buttonText[count].startswith("..."):
                 self.buttonColor[count] = [.3, .3, .3, 1]
             elif self.isalcoholic(drinks[count]):
@@ -168,7 +178,7 @@ class MainPanel(Screen):
                     paymentSettled = True
                     popup.dismiss()
                     Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
-                elif (counter > 5):
+                elif (counter > 6):
                     paymentSettled = True
                     popup.dismiss()
                     Clock.schedule_once( partial( self.doGiveDrink, args[0] ), .01 )
