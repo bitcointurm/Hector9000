@@ -121,6 +121,7 @@ class HectorHardware:
 
     def arm_pos(self):
         if devEnvironment:
+            pos = 100
        #     pos = GPIO.input(self.arm)
        #     print("arm_pos: %d" % pos)
 
