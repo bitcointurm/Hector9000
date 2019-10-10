@@ -146,7 +146,7 @@ MyScreenManager:
             size_hint_y: 0.02
             orientation: 'horizontal'
             Label:
-                text: 'Hector 9000'
+                text: 'Satoshi21'
                 font_size: 40
             Button:
                 size_hint_x: 0.1
@@ -175,7 +175,7 @@ MyScreenManager:
                     Image:
                         source: root.image[0]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     id: drink2
                     font_size: 20
@@ -185,7 +185,7 @@ MyScreenManager:
                     Image:
                         source: root.image[1]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     id: drink3
                     font_size: 20
@@ -195,7 +195,7 @@ MyScreenManager:
                     Image:
                         source: root.image[2]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     id: drink4
                     font_size: 20
@@ -205,7 +205,7 @@ MyScreenManager:
                     Image:
                         source: root.image[3]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     id: drink5
                     font_size: 20
@@ -215,7 +215,7 @@ MyScreenManager:
                     Image:
                         source: root.image[4]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
             BoxLayout:
 
                 spacing: 5
@@ -237,7 +237,7 @@ MyScreenManager:
                     Image:
                         source: root.image[5]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     text: root.buttonText[6]
                     font_size: 20
@@ -247,7 +247,7 @@ MyScreenManager:
                     Image:
                         source: root.image[6]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     text: root.buttonText[7]
                     font_size: 20
@@ -257,7 +257,7 @@ MyScreenManager:
                     Image:
                         source: root.image[7]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y-100
+                        center_y: self.parent.center_y
                 Button:
                     text: '-->'
                     font_size: 50
