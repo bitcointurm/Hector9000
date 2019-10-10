@@ -39,37 +39,40 @@ drink_list = [
             ("lemonjuice", 20)
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "Hal Ginny",
+        "image": "img/empty-glass.png",
+        "recipe": [
+            ("gin", 40),
+            ("cola", 80),
+            ("lemonjuice", 80)
+        ]
+    }, {
+        "name": "Vodka Livera",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "What Bitcoin Did",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "TFTC\nStacking Sats",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "7 tall black woman",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "Sats on the beach",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
-        "image": "img/empty-glass.png",
-        "recipe": [
-        ]
-    }, {
-        "name": "...under\nconstruction",
+        "name": "Cuba Libra",
         "image": "img/empty-glass.png",
         "recipe": [
         ]
