@@ -179,7 +179,7 @@ MyScreenManager:
                     Image:
                         source: root.image[0]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y
+                        center_y: self.parent.center_y-20
                 Button:
                     id: drink2
                     font_size: 20
@@ -193,7 +193,7 @@ MyScreenManager:
                     Image:
                         source: root.image[1]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y
+                        center_y: self.parent.center_y-20
                 Button:
                     id: drink3
                     font_size: 20
@@ -207,7 +207,7 @@ MyScreenManager:
                     Image:
                         source: root.image[2]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y
+                        center_y: self.parent.center_y-20
                 Button:
                     id: drink4
                     font_size: 20
@@ -221,7 +221,7 @@ MyScreenManager:
                     Image:
                         source: root.image[3]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y
+                        center_y: self.parent.center_y-20
                 Button:
                     id: drink5
                     font_size: 20
@@ -235,7 +235,7 @@ MyScreenManager:
                     Image:
                         source: root.image[4]
                         center_x: self.parent.center_x
-                        center_y: self.parent.center_y
+                        center_y: self.parent.center_y-20
             BoxLayout:
 
                 spacing: 5
