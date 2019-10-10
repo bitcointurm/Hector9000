@@ -172,7 +172,7 @@ MyScreenManager:
                     text: root.buttonText[0]
                     text_size: self.size
                     valign: 'top'
-                    padding_y: 20
+                    padding_y: 10
                     background_color: root.buttonColor[0]
                     on_press: root.choiceDrink(0)
                     Image:
@@ -183,6 +183,9 @@ MyScreenManager:
                     id: drink2
                     font_size: 20
                     text: root.buttonText[1]
+                    text_size: self.size
+                    valign: 'top'
+                    padding_y: 10
                     background_color: root.buttonColor[1]
                     on_press: root.choiceDrink(1)
                     Image:
@@ -193,6 +196,9 @@ MyScreenManager:
                     id: drink3
                     font_size: 20
                     text: root.buttonText[2]
+                    text_size: self.size
+                    valign: 'top'
+                    padding_y: 10
                     background_color: root.buttonColor[2]
                     on_press: root.choiceDrink(2)
                     Image:
@@ -203,6 +209,9 @@ MyScreenManager:
                     id: drink4
                     font_size: 20
                     text: root.buttonText[3]
+                    text_size: self.size
+                    valign: 'top'
+                    padding_y: 10
                     background_color: root.buttonColor[3]
                     on_press: root.choiceDrink(3)
                     Image:
@@ -213,6 +222,9 @@ MyScreenManager:
                     id: drink5
                     font_size: 20
                     text: root.buttonText[4]
+                    text_size: self.size
+                    valign: 'top'
+                    padding_y: 10
                     background_color: root.buttonColor[4]
                     on_press: root.choiceDrink(4)
                     Image:
