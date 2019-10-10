@@ -171,8 +171,8 @@ MyScreenManager:
                     font_size: 20
                     text:
                         root.buttonText[0]
-                        center_x: self.parent.center_x
-                        center_y: self.parent.center_y+100
+                        self.parent.center_x
+                        self.parent.center_y+100
 
                     background_color: root.buttonColor[0]
                     on_press: root.choiceDrink(0)
