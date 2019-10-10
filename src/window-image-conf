@@ -170,7 +170,8 @@ MyScreenManager:
                     id: drink1
                     font_size: 20
                     text: root.buttonText[0]
-                    valign: 'bottom'
+                    valign: 'Top'
+                    padding_y: 10
                     background_color: root.buttonColor[0]
                     on_press: root.choiceDrink(0)
                     Image:
