@@ -171,8 +171,9 @@ MyScreenManager:
                     font_size: 20
                     text: root.buttonText[0]
                     text_size: self.size
+                    halign: 'center'
                     valign: 'top'
-                    padding_y: 10
+                    padding_y: 5
                     background_color: root.buttonColor[0]
                     on_press: root.choiceDrink(0)
                     Image:
@@ -184,8 +185,9 @@ MyScreenManager:
                     font_size: 20
                     text: root.buttonText[1]
                     text_size: self.size
+                    halign: 'center'
                     valign: 'top'
-                    padding_y: 10
+                    padding_y: 5
                     background_color: root.buttonColor[1]
                     on_press: root.choiceDrink(1)
                     Image:
@@ -197,8 +199,9 @@ MyScreenManager:
                     font_size: 20
                     text: root.buttonText[2]
                     text_size: self.size
+                    halign: 'center'
                     valign: 'top'
-                    padding_y: 10
+                    padding_y: 5
                     background_color: root.buttonColor[2]
                     on_press: root.choiceDrink(2)
                     Image:
@@ -210,8 +213,9 @@ MyScreenManager:
                     font_size: 20
                     text: root.buttonText[3]
                     text_size: self.size
+                    halign: 'center'
                     valign: 'top'
-                    padding_y: 10
+                    padding_y: 5
                     background_color: root.buttonColor[3]
                     on_press: root.choiceDrink(3)
                     Image:
@@ -223,8 +227,9 @@ MyScreenManager:
                     font_size: 20
                     text: root.buttonText[4]
                     text_size: self.size
+                    halign: 'center'
                     valign: 'top'
-                    padding_y: 10
+                    padding_y: 5
                     background_color: root.buttonColor[4]
                     on_press: root.choiceDrink(4)
                     Image:
