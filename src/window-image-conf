@@ -169,11 +169,8 @@ MyScreenManager:
                 Button:
                     id: drink1
                     font_size: 20
-                    text:
-                        root.buttonText[0]
-                        self.parent.center_x
-                        self.parent.center_y+100
-
+                    text: root.buttonText[0]
+                          anchor_y: 'top'
                     background_color: root.buttonColor[0]
                     on_press: root.choiceDrink(0)
                     Image:
