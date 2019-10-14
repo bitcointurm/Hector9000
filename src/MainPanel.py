@@ -199,9 +199,9 @@ class MainPanel(Screen):
 
 
     def doGiveDrink(self, drink, intervaltime):
-
         root = BoxLayout(orientation='vertical')
         content = Label(text='Take a break -- \nYour \n\n' + self.drinkOnScreen[drink]["name"]+'\n\nwill be mixed.', font_size='40sp')
+        logging.warning( self.drinkOnScreen[drink]["name"] )
         root.add_widget(content)
         popup = Popup(title='Life, the Universe, and Everything. There is an answer.', content=root,
                       auto_dismiss=False)
