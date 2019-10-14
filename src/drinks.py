@@ -90,7 +90,7 @@ drink_list = [
         "image": "img/empty-glass.png",
         "recipe": [
             ("rum", 40),
-            ("lime", 10),
+            ("lime", 20),
             ("cola", 150)
         ]
     }, {
