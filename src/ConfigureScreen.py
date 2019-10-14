@@ -44,7 +44,7 @@ class Configure(Screen):
 
 
 class Cleaner(Screen):
-    drytime = 1800
+    drytime = 300
     colorOK = [0, 1, 0, 1]
     colorNOTOK = [1, 0, 0, 1]
     buttonColor = ListProperty([ListProperty(),
