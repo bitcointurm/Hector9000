@@ -20,10 +20,10 @@ if not devEnvironment:
     import RPi.GPIO as GPIO
     from hx711 import HX711
 
-logging.basicConfig(level=logging.DEBUG)
-logging.basicConfig(filename='/home/pi/log/cocktail.log')
+log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
+                     "%(filename)s::%(lineno)d::%(message)s"
+logging.basicConfig(filename="/home/pi/log/cocktail.log", level='DEBUG', format=log_format)  logging.warning('ping')
 logging.warning('ping')
-
 
 class HectorHardware:
 
