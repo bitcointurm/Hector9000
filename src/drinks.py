@@ -44,37 +44,54 @@ drink_list = [
         "recipe": [
             ("gin", 40),
             ("cola", 80),
-            ("lemonjuice", 80)
+            ("soda", 150)
         ]
     }, {
         "name": "Vodka Livera",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("vodka", 40),
+            ("lime", 10),
+            ("soda", 150)
         ]
     }, {
         "name": "What Bitcoin Did",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("rum", 40),
+            ("cola", 160)
         ]
     }, {
         "name": "TFTC\nStacking Sats",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("vodka", 40),
+            ("lime", 10),
+            ("soda", 150)
         ]
     }, {
         "name": "7 tall black woman",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("vodka", 40),
+            ("cola", 10)
         ]
     }, {
         "name": "Sats on the beach",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("vodka", 40),
+            ("grenadine", 40),
+            ("pineapple", 80),
+            ("tonic", 80)
         ]
     }, {
         "name": "Cuba Libra",
         "image": "img/empty-glass.png",
         "recipe": [
+            ("rum", 40),
+            ("lime", 10),
+            ("cola", 150)
         ]
     }, {
         "name": "...under\nconstruction",
