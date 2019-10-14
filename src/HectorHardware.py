@@ -21,7 +21,7 @@ if not devEnvironment:
     from hx711 import HX711
 
 logging.basicConfig(level=logging.DEBUG)
-logging.basicConfig(filename='/home/pi/log/cocktail.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='/home/pi/log/cocktail.log')
 logging.warning('ping')
 
 
