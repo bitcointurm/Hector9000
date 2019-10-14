@@ -6,8 +6,8 @@ drink_list = [
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "image": "img/bitcoinimturm.png",
         "recipe": [
-            ("rum", 50),
-            ("gin", 5)
+            ("tonic", 150),
+            ("gin", 50)
         ]
     }, {
         "name": "Matt Colado",
@@ -120,7 +120,7 @@ ingredients = {
     "coco": ("Coco", False),
     "lemonjuice": ("Lemonjuice", False),
     "pineapple": ("Pineapple", False),
-    "oj": ("oj", False),
+    "tonic": ("Tonic", False),
     "lime": ("Lime", False),
     "soda": ("Soda", True),
     "cola": ("Cola", False),
