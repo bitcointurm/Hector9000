@@ -20,6 +20,11 @@ from pygame import mixer
 from pathlib import Path
 import subprocess
 
+## logging
+import logging 
+logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(filename='/home/pi/log/cocktail.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+
 from HectorHardware import HectorHardware
 
 
