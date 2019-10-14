@@ -22,8 +22,9 @@ import subprocess
 
 ## logging
 import logging 
-logging.basicConfig(level=logging.DEBUG)
-logging.basicConfig(filename='/home/pi/log/cocktail.log')
+log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
+                     "%(filename)s::%(lineno)d::%(message)s"
+logging.basicConfig(filename="/home/pi/log/cocktail.log", level='DEBUG', format=log_format)
 
 from HectorHardware import HectorHardware
 
