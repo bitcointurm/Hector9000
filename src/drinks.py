@@ -11,7 +11,7 @@ drink_list = [
         ]
     }, {
         "name": "Matt Colado",
-        "sound": "/home/pi/Music/TestRaspi.mp3",
+        "sound": "/home/pi/Music/BitcoinShitcoinLang.m4a",
         "image": "img/bluematt.png",
         "recipe": [
             ("rum", 40),
@@ -29,18 +29,9 @@ drink_list = [
             ("gin", 80),
             ("cola", 120)
         ]
-    }, {
-        "name": "Bavarian Badger",
-        "sound": "/home/pi/Music/TestRaspi.mp3",
-        "image": "img/empty-glass.png",
-        "recipe": [
-            ("gin", 40),
-            ("grenadine", 42),
-            ("lemonjuice", 20)
-        ]
-    }, {
+    },  {
         "name": "Hal Ginny",
-        "image": "img/empty-glass.png",
+        "image": "img/halfinney.png",
         "recipe": [
             ("gin", 40),
             ("cola", 80),
@@ -48,7 +39,7 @@ drink_list = [
         ]
     }, {
         "name": "Vodka Livera",
-        "image": "img/empty-glass.png",
+        "image": "img/livera.png",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
@@ -56,14 +47,14 @@ drink_list = [
         ]
     }, {
         "name": "What Bitcoin Did",
-        "image": "img/empty-glass.png",
+        "image": "img/whatbitcoindid.png",
         "recipe": [
             ("rum", 40),
             ("cola", 160)
         ]
     }, {
         "name": "TFTC\nStacking Sats",
-        "image": "img/empty-glass.png",
+        "image": "img/TFTC.png",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
@@ -71,7 +62,7 @@ drink_list = [
         ]
     }, {
         "name": "7 tall black woman",
-        "image": "img/empty-glass.png",
+        "image": "img/giacomo.png",
         "recipe": [
             ("vodka", 40),
             ("cola", 10)
@@ -94,6 +85,15 @@ drink_list = [
             ("cola", 150)
         ]
     }, {
+        "name": "Bavarian Badger",
+        "sound": "/home/pi/Music/TestRaspi.mp3",
+        "image": "img/empty-glass.png",
+        "recipe": [
+            ("gin", 40),
+            ("grenadine", 42),
+            ("lemonjuice", 20)
+        ]
+    },{
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
         "recipe": [
