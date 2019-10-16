@@ -32,6 +32,7 @@ drink_list = [
     },  {
         "name": "Hal Ginny",
         "image": "img/halfinney.png",
+        "sound": "/home/pi/Music/CraigNoSplit.mp3",
         "recipe": [
             ("gin", 40),
             ("cola", 80),
