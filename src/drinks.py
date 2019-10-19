@@ -11,7 +11,7 @@ drink_list = [
         ]
     }, {
         "name": "Matt Colado",
-        "sound": "/home/pi/Music/BitcoinShitcoinLang.m4a",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "image": "img/bluematt.png",
         "recipe": [
             ("rum", 40),
