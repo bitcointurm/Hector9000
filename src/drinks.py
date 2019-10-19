@@ -74,8 +74,8 @@ drink_list = [
             ("rum", 10),
             ("cola", 40),
             ("lime", 10),
-            ("tonix", 20),
-            ("coconut", 20)
+            ("tonic", 20),
+            ("coco", 20)
         ]
     }, {
         "name": "Sats on the beach",
