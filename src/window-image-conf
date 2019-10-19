@@ -146,7 +146,7 @@ MyScreenManager:
             size_hint_y: 0.02
             orientation: 'horizontal'
             Label:
-                text: 'Satoshi21'
+                text: 'Satoshi12'
                 font_size: 40
             Button:
                 size_hint_x: 0.1
