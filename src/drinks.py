@@ -65,12 +65,17 @@ drink_list = [
             ("soda", 150)
         ]
     }, {
-        "name": "7 tall black woman",
+        "name": "7 tall black women",
         "image": "img/giacomo.png",
         "sound": "/home/pi/Music/Jail20yearsCW.mp3",
         "recipe": [
-            ("vodka", 40),
-            ("cola", 10)
+            ("vodka", 10),
+            ("gin", 20),
+            ("rum", 10),
+            ("cola", 40),
+            ("lime", 10),
+            ("tonix", 20),
+            ("coconut", 20)
         ]
     }, {
         "name": "Sats on the beach",
