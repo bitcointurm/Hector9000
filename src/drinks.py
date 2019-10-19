@@ -159,7 +159,7 @@ ingredients = {
     "rum": ("Rum", True),
     "gin": ("Gin", True),
     "vodka": ("Vodka", True),
-    "triple": ("Triple", True),
+    "whiskey": ("Whiskey", True),
     "grenadine": ("Grenadine", False),
     "coco": ("Coco", False),
     "lemonjuice": ("Lemonjuice", False),
