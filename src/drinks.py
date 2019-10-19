@@ -94,23 +94,32 @@ drink_list = [
     }, {
         "name": "Bavarian Badger",
         "sound": "/home/pi/Music/TestRaspi.mp3",
-        "image": "img/empty-glass.png",
+        "image": "img/badger.jpg",
         "recipe": [
             ("gin", 40),
-            ("grenadine", 42),
-            ("lemonjuice", 20)
+            ("grenadine", 20),
+            ("lime", 20),
+            ("tonic", 100)
         ]
     },{
-        "name": "...under\nconstruction",
+        "name": "Sh**tcoin's Punch",
         "image": "img/empty-glass.png",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/vob.mp3",
         "recipe": [
+            ("rum", 40),
+            ("pineapple", 80),
+            ("lime", 10),
+            ("grenadine", 10)       
         ]
     }, {
-        "name": "...under\nconstruction",
+        "name": "iota",
         "image": "img/empty-glass.png",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
+            ("cola", 40),
+            ("pineapple", 40),
+            ("lime", 30),
+            ("grenadine", 10)   
         ]
     }, {
         "name": "...under\nconstruction",
