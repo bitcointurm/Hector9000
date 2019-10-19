@@ -41,6 +41,7 @@ drink_list = [
     }, {
         "name": "Vodka Livera",
         "image": "img/livera.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
@@ -49,6 +50,7 @@ drink_list = [
     }, {
         "name": "What Bitcoin Did",
         "image": "img/whatbitcoindid.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("rum", 40),
             ("cola", 160)
@@ -56,6 +58,7 @@ drink_list = [
     }, {
         "name": "TFTC\nStacking Sats",
         "image": "img/TFTC.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
@@ -64,6 +67,7 @@ drink_list = [
     }, {
         "name": "7 tall black woman",
         "image": "img/giacomo.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 40),
             ("cola", 10)
@@ -71,6 +75,7 @@ drink_list = [
     }, {
         "name": "Sats on the beach",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 40),
             ("grenadine", 40),
@@ -80,6 +85,7 @@ drink_list = [
     }, {
         "name": "Cuba Libra",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("rum", 40),
             ("lime", 10),
@@ -97,31 +103,37 @@ drink_list = [
     },{
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
         "name": "...under\nconstruction",
         "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }
