@@ -103,7 +103,7 @@ drink_list = [
         ]
     },{
         "name": "Sh**tcoin's Punch",
-        "image": "img/empty-glass.png",
+        "image": "img/vob.png",
         "sound": "/home/pi/Music/vob.mp3",
         "recipe": [
             ("rum", 40),
