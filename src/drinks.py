@@ -11,7 +11,7 @@ drink_list = [
         ]
     }, {
         "name": "Matt Colado",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/Vitalik.mp3",
         "image": "img/bluematt.png",
         "recipe": [
             ("rum", 40),
@@ -67,7 +67,7 @@ drink_list = [
     }, {
         "name": "7 tall black woman",
         "image": "img/giacomo.png",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/Jail20yearsCW.mp3",
         "recipe": [
             ("vodka", 40),
             ("cola", 10)
