@@ -119,10 +119,7 @@ drink_list = [
         "image": "img/empty-glass.png",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
-            ("cola", 40),
-            ("pineapple", 40),
-            ("lime", 30),
-            ("grenadine", 10)   
+            ("soda", 1)
         ]
     }, {
         "name": "The Starkness",
