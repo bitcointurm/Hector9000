@@ -89,7 +89,7 @@ drink_list = [
         ]
     }, {
         "name": "nodl!",
-        "image": "img/nodl.jng",
+        "image": "img/nodl.jpg",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("whiskey", 40)
