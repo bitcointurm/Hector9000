@@ -3,7 +3,7 @@
 drink_list = [
     {
         "name": "Bitcoin im Turm",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/Vitalik.mp3",
         "image": "img/bitcoinimturm.png",
         "recipe": [
             ("tonic", 150),
@@ -41,7 +41,7 @@ drink_list = [
     }, {
         "name": "Vodka Livera",
         "image": "img/livera.png",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/CraigNoSplit.mp3",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
@@ -127,20 +127,20 @@ drink_list = [
             ("grenadine", 10)   
         ]
     }, {
-        "name": "...under\nconstruction",
-        "image": "img/empty-glass.png",
+        "name": "The Starkness",
+        "image": "img/stark.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
-        "image": "img/empty-glass.png",
+        "name": "Nick Szabo-oo",
+        "image": "img/nickszabo.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
     }, {
-        "name": "...under\nconstruction",
-        "image": "img/empty-glass.png",
+        "name": "Alex Anarcho",
+        "image": "img/alexanarcho.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
         ]
