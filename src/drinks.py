@@ -129,9 +129,8 @@ drink_list = [
         "image": "img/stark.jpg",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
-            ("vodka", 20),
-            ("lime", 30),
-            ("soda", 100)
+            ("vodka", 40),
+            ("lime", 60)
         ]
     }, {
         "name": "Nick Szabo-oo",
