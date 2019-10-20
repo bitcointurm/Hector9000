@@ -128,7 +128,7 @@ drink_list = [
         ]
     }, {
         "name": "The Starkness",
-        "image": "img/stark.jng",
+        "image": "img/stark.jpg",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 20),
@@ -136,7 +136,7 @@ drink_list = [
         ]
     }, {
         "name": "Nick Szabo-oo",
-        "image": "img/nickszabo.jng",
+        "image": "img/nickszabo.jpg",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 20),
@@ -144,7 +144,7 @@ drink_list = [
         ]
     }, {
         "name": "Alex Anarcho",
-        "image": "img/alexanarcho.jng",
+        "image": "img/alexanarcho.jpg",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("tonic", 100),
