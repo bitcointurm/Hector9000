@@ -130,7 +130,8 @@ drink_list = [
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 20),
-            ("lime", 30)
+            ("lime", 30),
+            ("soda", 100)
         ]
     }, {
         "name": "Nick Szabo-oo",
@@ -138,7 +139,7 @@ drink_list = [
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("vodka", 20),
-            ("cola", 100)   
+            ("cola", 120)   
         ]
     }, {
         "name": "Alex Anarcho",
