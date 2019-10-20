@@ -88,13 +88,11 @@ drink_list = [
             ("tonic", 80)
         ]
     }, {
-        "name": "Cuba Libra",
-        "image": "img/empty-glass.png",
+        "name": "nodl!",
+        "image": "img/nodl.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
-            ("rum", 40),
-            ("lime", 10),
-            ("cola", 150)
+            ("whiskey", 40)
         ]
     }, {
         "name": "Bavarian Badger",
