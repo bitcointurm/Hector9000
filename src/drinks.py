@@ -60,8 +60,7 @@ drink_list = [
         "image": "img/TFTC.png",
         "sound": "/home/pi/Music/tftc.mp3",
         "recipe": [
-            ("vodka", 40),
-            ("lime", 10),
+            ("whiskey", 40),
             ("soda", 150)
         ]
     }, {
