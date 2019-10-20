@@ -131,24 +131,24 @@ drink_list = [
         "image": "img/stark.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
+            ("vodka", 20),
+            ("lime", 30)
         ]
     }, {
         "name": "Nick Szabo-oo",
         "image": "img/nickszabo.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
+            ("vodka", 20),
+            ("cola", 100)   
         ]
     }, {
         "name": "Alex Anarcho",
         "image": "img/alexanarcho.jng",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
-        ]
-    }, {
-        "name": "...under\nconstruction",
-        "image": "img/empty-glass.png",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
-        "recipe": [
+            ("tonic", 100),
+            ("pineapple", 40)
         ]
     }
 
