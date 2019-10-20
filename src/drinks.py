@@ -58,7 +58,7 @@ drink_list = [
     }, {
         "name": "TFTC\nStacking Sats",
         "image": "img/TFTC.png",
-        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "sound": "/home/pi/Music/tftc.mp3",
         "recipe": [
             ("vodka", 40),
             ("lime", 10),
