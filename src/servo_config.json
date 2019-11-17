@@ -57,9 +57,8 @@
 	"pump_12": {
 		"name": "Pump 12",
 		"channel": 11,
-		"value": "cola"
-	}
-		},
+		"value": "cola”
+	},
 	"pump_13": {
 		"name": "Pump 13",
 		"channel": 12,
