@@ -98,3 +98,7 @@ src/lnd/temp/
 *.log
 *.macaroon
 *.cert
+
+## Pictures
+*.png
+*.jpg
