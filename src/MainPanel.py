@@ -202,7 +202,8 @@ class MainPanel(Screen):
         ## End Function to periodically check the payment using lnd-checkinvoice1.sh
 
         ## start 'checkPayment-loop' when loading popup
-        popup.bind(on_open=checkPayment)
+        if lightning:
+            popup.bind(on_open=checkPayment)
 
 
         popup.open()
