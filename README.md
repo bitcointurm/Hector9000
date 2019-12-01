@@ -43,10 +43,8 @@ https://github.com/H3c702/Hector9000
 
 Start Hector :
 ----
-	cd Hector9000
-	cd srv
-	python3 main.py
-
+	hector-start
+	
 Add Drinks
 ---
 
