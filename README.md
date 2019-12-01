@@ -28,7 +28,7 @@ NOT TESTED! COMES WITHOUT ANY WARRANTY!
 
 	## After you have installed Python and Kivy you can get the sources by using Git
 	cd ~
-	git clone https://github.com/DaniW42/Hector9000.git
+	git clone https://github.com/Satoshi24/Hector9000.git
 
 	## Install all the requirements listed in the file requirements.txt
 	cd Hector9000/
