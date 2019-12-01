@@ -1,7 +1,7 @@
 Satoshi24
 ======================
 
-![Hector9000 serving a Cocktail](https://repository-images.githubusercontent.com/195014271/54d0a380-ac88-11e9-9497-a44198e84aff)
+![Satoshi24 serving a Cocktail](http://bitcoin-turm.de/wp-content/uploads/2019/11/signal-attachment-2019-10-21-171136_002.jpeg)
 
 
 Install on RaspberryPi
