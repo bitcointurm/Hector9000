@@ -1,7 +1,7 @@
 Satoshi24
 ======================
 
-![Satoshi24 serving a Cocktail](https://twitter.com/dergigi/status/1186296110052192256/photo/2)
+![Satoshi24 serving a Cocktail](http://bitcoin-turm.de/wp-content/uploads/2019/11/signal-attachment-2019-10-21-171136_002.jpeg)
 
 
 Install on RaspberryPi
