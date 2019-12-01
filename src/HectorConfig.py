@@ -7,7 +7,7 @@ config = {
     },
     "pca9685": {
         "freq": 60,
-        "valvechannels": range(12),  # 0..11
+        "valvechannels": range(24),  # 0..11
         "valvepositions": [  # (open, closed)
             (280, 520),  # ch 0
             (290, 520),  # ch 1
@@ -20,7 +20,19 @@ config = {
             (490, 250),  # ch 8
             (290, 520),  # ch 9
             (500, 250),  # ch 10
-            (330, 110)  # ch 11
+            (330, 110),  # ch 11
+            (330, 110),  # ch 12
+            (330, 110),  # ch 13
+            (330, 110),  # ch 14
+            (330, 110),  # ch 15
+            (330, 110),  # ch 16
+            (330, 110),  # ch 17
+            (330, 110),  # ch 18
+            (330, 110),  # ch 19
+            (330, 110),  # ch 20
+            (330, 110),  # ch 21
+            (330, 110),  # ch 22
+            (330, 110)  # ch 23
         ],
         "fingerchannel": 12,
         "fingerpositions": (280, 430, 450),  # retracted, above bell, bell
