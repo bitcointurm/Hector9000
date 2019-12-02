@@ -23,7 +23,7 @@ config = {
             (330, 110)  # ch 11
         ],
         "fingerchannel": 12,
-        "fingerpositions": (280, 430, 450),  # retracted, above bell, bell
+        "fingerpositions": (280, 440, 460),  # retracted, above bell, bell
         "lightpin": 22,
         "lightpwmchannel": 13,
         "lightpositions": (0, 500)
