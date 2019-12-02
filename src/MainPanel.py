@@ -143,7 +143,7 @@ class MainPanel(Screen):
             
         list_ing = None
         for ing in self.drinkOnScreen[args[0]]["recipe"]:
-            list_ing = list_ing + ing[0] + ": " + str(ing[1]) + "\n"
+            list_ing = list_ing + ingredients[ing[0]][0] + ": " + str(ing[1]) + "\n"
             
         
         root2.add_widget(
