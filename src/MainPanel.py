@@ -128,7 +128,7 @@ class MainPanel(Screen):
             return
         
         ## Start Script to create Invoice	
-        if lightning:
+        if self.lightning:
             print("start lnd-invoicetoqr.sh")	
             subprocess.call("lnd/lnd-invoicetoqr.sh")	
             print("end lnd-invoicetoqr.sh")
@@ -136,7 +136,7 @@ class MainPanel(Screen):
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         
-        if lightning:
+        if self.lightning:
             root2.add_widget(Image(source='lnd/temp/tempQRCode.png'))
         else:
             root2.add_widget(Image(source='img/empty-glass.png'))
@@ -145,7 +145,7 @@ class MainPanel(Screen):
             Label(text='Please be sure\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
         root.add_widget(root2)
 
-        if not lightning:
+        if not self.lightning:
             contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
             root.add_widget(contentOK)
 
@@ -159,7 +159,7 @@ class MainPanel(Screen):
             popup.dismiss()
             Clock.schedule_once(partial(self.doGiveDrink, args[0]), .01)
 
-        if not lightning:
+        if not self.lightning:
             contentOK.bind(on_press=closeme)
         
         def cancelme(button):
@@ -202,7 +202,7 @@ class MainPanel(Screen):
         ## End Function to periodically check the payment using lnd-checkinvoice1.sh
 
         ## start 'checkPayment-loop' when loading popup
-        if lightning:
+        if self.lightning:
             popup.bind(on_open=checkPayment)
 
 
