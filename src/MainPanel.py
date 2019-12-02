@@ -141,8 +141,13 @@ class MainPanel(Screen):
         else:
             root2.add_widget(Image(source='img/empty-glass.png'))
             
+        list_ing = None
+        for ing in self.drinkOnScreen[args[0]]["recipe"]:
+            list_ing = list_ing + ingredients[ing[0]][0] + ": " + str(ing[1]) + "\n"
+            
+        
         root2.add_widget(
-            Label(text='Please be sure\n that a glass \nwith min 200 ml \nis placed onto the black fixture.', font_size='30sp'))
+            Label(text=list_ing + '\nPlease be sure\nthat a glass with min 200 ml \nis placed onto the black fixture.', font_size='20sp'))
         root.add_widget(root2)
 
         if not self.lightning:
@@ -152,7 +157,7 @@ class MainPanel(Screen):
         contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
         root.add_widget(contentCancel)
 
-        popup = Popup(title='LOOK HERE !!!', content=root,
+        popup = Popup(title=self.drinkOnScreen[args[0]]["name"], content=root,
                       auto_dismiss=False)
 
         def closeme(button):
