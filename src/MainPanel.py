@@ -141,7 +141,7 @@ class MainPanel(Screen):
         else:
             root2.add_widget(Image(source='img/empty-glass.png'))
             
-        list_ing = None
+        list_ing = "Ingredients:\n"
         for ing in self.drinkOnScreen[args[0]]["recipe"]:
             list_ing = list_ing + ingredients[ing[0]][0] + ": " + str(ing[1]) + "\n"
             
