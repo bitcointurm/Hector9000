@@ -13,7 +13,10 @@ while True:
     cpos = h.valvePositions[vnum][1]
     print("Ventil %d wird geschlossen, Servoposition = %d" % (vnum, cpos))
     while cpos != -1:
-        h.pca.set_pwm(vnum, 0, cpos)
+        if vnum < 12:
+            h.pca.set_pwm(vnum, 0, cpos)
+        else:
+            h.pcaplus.set_pwm(vnum-12, 0, cpos)
         cpos = int(input("Bitte neue Servoposition eingeben:"))
 
 
