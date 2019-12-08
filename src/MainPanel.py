@@ -189,6 +189,7 @@ class MainPanel(Screen):
                 print(s)
                 counter +=1
                 print( counter )
+                print( canceled )
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
                 if (b'SETTLED' in s):
