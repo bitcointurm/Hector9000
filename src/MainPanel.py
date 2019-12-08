@@ -60,7 +60,7 @@ class MainPanel(Screen):
     drinkOnScreen = None
     screenPage = None
     maxScreenPage = None
-    lightning = True
+    lightning = False
 
     def __init__(self, **kwargs):
         super(MainPanel, self).__init__(**kwargs)
