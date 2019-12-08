@@ -230,7 +230,7 @@ class HectorHardware:
             for vnum in range(24):
                 print("Vent %d opening..." % (vnum,))
                 time.sleep(1)
-                h.valve_opem(vnum)
+                h.valve_open(vnum)
         print("Bye!")
         sys.exit()
 
