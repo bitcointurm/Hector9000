@@ -146,7 +146,7 @@ drink_list = [
         ]
     }, {
         "name": "Tequila",
-        "image": "img/empty-glass.jpg",
+        "image": "img/empty-glass.png",
         "sound": "/home/pi/Music/SatoshiCountry.mp3",
         "recipe": [
             ("tequila", 40)
