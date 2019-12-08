@@ -60,6 +60,16 @@ class Cleaner(Screen):
                                 ListProperty(),
                                 ListProperty(),
                                 ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
                                 ListProperty()])
 
     def __init__(self, **kwargs):
