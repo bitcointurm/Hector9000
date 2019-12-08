@@ -18,7 +18,7 @@ class Configure(Screen):
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(
-            Label(text='Do you realy want to close Hector9000 ? \nThere will be no more drinks ....'))
+            Label(text='Do you realy want to close Stoshi24 ? \nThere will be no more drinks ....'))
         root.add_widget(root2)
 
         buttOK = Button(text='OK', font_size=60, size_hint_y=0.15)
@@ -83,10 +83,10 @@ class Cleaner(Screen):
                            auto_dismiss=False)
         if workIndex == 1:
             content = Label(
-                text='Take a long break: \n\n Hectoe9000 is cleaning and drying himself. \nThis will take some time.')
+                text='Take a long break: \n\n Satoshi24 is cleaning and drying himself. \nThis will take some time.')
             self.popup.bind(on_open=self.clean)
         if workIndex == 2:
-            content = Label(text='Take a break: \n\n Hectoe9000 is drying. \nThis will take some time.')
+            content = Label(text='Take a break: \n\n Satoshi24 is drying. \nThis will take some time.')
             self.popup.bind(on_open=self.dry)
 
         root.add_widget(content)
