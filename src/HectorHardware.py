@@ -45,7 +45,7 @@ class HectorHardware:
             pcafreq = cfg["pca9685"]["freq"]
             self.pca = Adafruit_PCA9685.PCA9685(address=0x40)
             self.pca.set_pwm_freq(pcafreq)
-            self.pcaplus = Adafruit_PCA9685.PCA9685(address=0x41) #,busnum=None)
+            self.pcaplus = Adafruit_PCA9685.PCA9685(address=0x41,busnum=2)
             self.pcaplus.set_pwm_freq(pcafreq)
             
             self.valveChannels = cfg["pca9685"]["valvechannels"]
