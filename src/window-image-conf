@@ -131,7 +131,7 @@ MyScreenManager:
                     font_size: 20
                     id: pump19
                     background_color: root.buttonColor[18]
-                    on_press: root.changeButton(19)
+                    on_press: root.changeButton(18)
                 Button:
                     text: 'Ventil 20'
                     font_size: 20
