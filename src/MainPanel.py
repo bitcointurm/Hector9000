@@ -91,7 +91,7 @@ class MainPanel(Screen):
         h.arm_in()
 
         h.pump_stop()
-        for vnum in range(12):
+        for vnum in range(24):
             print("Vent %d closing..." % (vnum,))
             time.sleep(1)
             h.valve_close(vnum)
@@ -122,6 +122,8 @@ class MainPanel(Screen):
             count += 1
 
     def choiceDrink(self, *args):
+        
+        canceled = False
         self.readPumpConfiguration()
         if len(self.drinkOnScreen) -1 < args[0]:
             print("no drinks found.")
@@ -168,6 +170,7 @@ class MainPanel(Screen):
             contentOK.bind(on_press=closeme)
         
         def cancelme(button):
+            canceled = True
             popup.dismiss()
 
         contentCancel.bind(on_press=cancelme)
@@ -200,6 +203,9 @@ class MainPanel(Screen):
                     ## if not 'SETTLED' wait a second and start over
                     paymentSettled = False
                     time.sleep(1)
+                if canceled:
+                    paymentSettled = True
+                    popup.dismiss()
                 pass
             pass
 
@@ -210,8 +216,8 @@ class MainPanel(Screen):
         if self.lightning:
             popup.bind(on_open=checkPayment)
 
-
         popup.open()
+
 
     def doGiveDrink(self, drink, intervaltime):
         root = BoxLayout(orientation='vertical')
@@ -255,6 +261,7 @@ class MainPanel(Screen):
         popup.bind(on_open=makeDrink)
 
         popup.open()
+        
 
     def back(self):
         if self.screenPage == 1:
