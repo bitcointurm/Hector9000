@@ -123,7 +123,6 @@ class MainPanel(Screen):
 
     def choiceDrink(self, *args):
         
-        canceled = False
         self.readPumpConfiguration()
         if len(self.drinkOnScreen) -1 < args[0]:
             print("no drinks found.")
@@ -170,7 +169,6 @@ class MainPanel(Screen):
             contentOK.bind(on_press=closeme)
         
         def cancelme(button):
-            canceled = True
             popup.dismiss()
 
         contentCancel.bind(on_press=cancelme)
@@ -189,7 +187,12 @@ class MainPanel(Screen):
                 print(s)
                 counter +=1
                 print( counter )
-                print( canceled )
+                
+                def cancelme(button):
+                    canceled = True
+                    popup.dismiss()
+
+                contentCancel.bind(on_press=cancelme)
 
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
                 if (b'SETTLED' in s):
@@ -204,9 +207,6 @@ class MainPanel(Screen):
                     ## if not 'SETTLED' wait a second and start over
                     paymentSettled = False
                     time.sleep(1)
-                if canceled:
-                    paymentSettled = True
-                    popup.dismiss()
                 pass
             pass
 
