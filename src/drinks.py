@@ -169,10 +169,21 @@ ingredients = {
     "lime": ("Lime", False),
     "soda": ("Soda", True),
     "cola": ("Cola", False),
-    "tequila": ("tequila", True)
- #   "beer": ("Beer", True),
+    "tequila": ("Tequila", True),
+    "empty1": ("Empty1", False),
  #   "water": ("Water", True),
+    "empty2": ("Empty2", False),
  #   "bacardi": ("Bacardi", True),
+    "empty3": ("Empty3", False),
+ #   "beer": ("Beer", True),
+    "empty4": ("Empty4", False),
+    "empty5": ("Empty5", False),
+    "empty6": ("Empty6", False),
+    "empty7": ("Empty7", False),
+    "empty8": ("Empty8", False),
+    "empty9": ("Empty9", False),
+    "empty10": ("Empty10", False),
+    "empty11": ("Empty11", False),
 }
 
 
