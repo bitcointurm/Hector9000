@@ -151,6 +151,83 @@ drink_list = [
         "recipe": [
             ("tequila", 40)
         ]
+    }, {
+        "name": "empty1",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty1", 40)
+        ]
+    }, {
+        "name": "empty2",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty2", 40)
+        ]
+    }, {
+        "name": "empty3",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty3", 40)
+        ]
+    }, {
+        "name": "empty4",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty4", 40)
+        ]
+    }, {
+        "name": "empty5",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty5", 40)
+        ]
+    }, {
+        "name": "empty6",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty6", 40)
+        ]
+    }, {
+        "name": "empty7",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty7", 40)
+        ]
+    }, {
+        "name": "empty8",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty8", 40)
+        ]
+    }, {
+        "name": "empty9",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty9", 40)
+        ]
+    }, {
+        "name": "empty10",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty10", 40)
+        ]
+    }, {
+        "name": "empty11",
+        "image": "img/empty-glass.png",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("empty11", 40)
+        ]
     }
 
 ]
