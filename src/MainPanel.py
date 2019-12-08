@@ -177,10 +177,6 @@ class MainPanel(Screen):
         def checkPayment(parent):
 
             print("start check script")
-            def cancelme(button):
-                popup.dismiss()
-
-            contentCancel.bind(on_press=cancelme)
 
             ## while loop to check if lnd-checkinvoice1.sh returns SETTLED, if not wait for a second and start over
             paymentSettled = False
@@ -192,8 +188,6 @@ class MainPanel(Screen):
                 counter +=1
                 print( counter )
                 
-
-
                 ## check if s is 'SETTLED', if so, close popup and start doGiveDrink
                 if (b'SETTLED' in s):
                     paymentSettled = True
