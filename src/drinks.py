@@ -144,6 +144,13 @@ drink_list = [
             ("tonic", 100),
             ("pineapple", 40)
         ]
+    }, {
+        "name": "Tequila",
+        "image": "img/empty-glass.jpg",
+        "sound": "/home/pi/Music/SatoshiCountry.mp3",
+        "recipe": [
+            ("tequila", 40)
+        ]
     }
 
 ]
@@ -162,7 +169,7 @@ ingredients = {
     "lime": ("Lime", False),
     "soda": ("Soda", True),
     "cola": ("Cola", False),
- #   "tequila": ("tequila", True),
+    "tequila": ("tequila", True)
  #   "beer": ("Beer", True),
  #   "water": ("Water", True),
  #   "bacardi": ("Bacardi", True),
