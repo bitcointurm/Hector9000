@@ -1,7 +1,7 @@
 {
 	"pump_1": {
 		"name": "Pump 1",
-		"channel": 0, 0x40,
+		"channel": 0,
 		"value": "rum"
 	},
 	"pump_2": {
@@ -67,56 +67,56 @@
 	"pump_14": {
 		"name": "Pump 14",
 		"channel": 1, 
-		"value": "cola"
+		"value": "empty1"
 	},
 	"pump_15": {
 		"name": "Pump 15",
 		"channel": 2, 
-		"value": "cola"
+		"value": "empty2"
 	},
 	"pump_16": {
 		"name": "Pump 16",
 		"channel": 3, 
-		"value": "cola"
+		"value": "empty3"
 	},
 	"pump_17": {
 		"name": "Pump 17",
 		"channel": 4, 
-		"value": "cola"
+		"value": "empty4"
 	},
 	"pump_18": {
 		"name": "Pump 18",
 		"channel": 5, 
-		"value": "cola"
+		"value": "empty5"
 	},
 	"pump_19": {
 		"name": "Pump 19",
 		"channel": 6, 
-		"value": "cola"
+		"value": "empty6"
 	},
 	"pump_20": {
 		"name": "Pump 20",
 		"channel": 7, 
-		"value": "cola"
+		"value": "empty7"
 	},
 	"pump_21": {
 		"name": "Pump 21",
 		"channel": 8, 
-		"value": "cola"
+		"value": "empty8"
 	},
 	"pump_22": {
 		"name": "Pump 22",
 		"channel": 9, 
-		"value": "cola"
+		"value": "empty9"
 	},
 	"pump_23": {
 		"name": "Pump 23",
 		"channel": 10,
-		"value": "cola"
+		"value": "empty10"
 	},
 	"pump_24": {
 		"name": "Pump 24",
 		"channel": 11, 
-		"value": "cola"
+		"value": "empty11"
 	}
 }
