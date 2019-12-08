@@ -18,7 +18,7 @@ while True:
         if vnum < 12:
             h.pca.set_pwm(vnum, 0, cpos)
         elif vnum >= 24:
-            h.pca.set_pwm(13, 0, cpos)
+            h.pca.set_pwm(h.fingerchannel, 0, cpos)
         else:
             h.pcaplus.set_pwm(vnum-12, 0, cpos)
         cpos = int(input("Bitte neue Servoposition eingeben:"))
