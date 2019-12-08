@@ -61,7 +61,7 @@
 	},
 	"pump_13": {
 		"name": "Pump 13",
-		"channel": 0, 
+		"channel": 12, 
 		"value": "tequila"
 	},
 	"pump_14": {
