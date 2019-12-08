@@ -91,7 +91,7 @@ class MainPanel(Screen):
         h.arm_in()
 
         h.pump_stop()
-        for vnum in range(12):
+        for vnum in range(24):
             print("Vent %d closing..." % (vnum,))
             time.sleep(1)
             h.valve_close(vnum)
