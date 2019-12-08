@@ -227,6 +227,10 @@ class HectorHardware:
         print("Cleaning...")
         if not devEnvironment:
             GPIO.cleanup()
+            for vnum in range(24):
+                print("Vent %d opening..." % (vnum,))
+                time.sleep(1)
+                h.valve_opem(vnum)
         print("Bye!")
         sys.exit()
 
