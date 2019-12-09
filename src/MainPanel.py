@@ -87,12 +87,14 @@ class MainPanel(Screen):
         
         root2 = BoxLayout()
         root2.add_widget(
-        Label(text='Do you want to run with Lightning active?', font_size='40sp'))
+        Label(text='Do you want to get connected to a lightning node?\n Choose wisely, because this panel can be used once only!', font_size='40sp'))
         root.add_widget(root2)
         
-        lightningON = Button(text='ON - this cannot get reverted without restart', font_size=60, size_hint_y=0.15)
-        root.add_widget(lightningON)
-        lightningOFF = Button(text='BACK', font_size=60, size_hint_y=0.15)
+        lightningBIT = Button(text='Bitcoin im Turm-Node (inactive)', font_size=30, size_hint_y=0.15)
+        root.add_widget(lightningBIT)
+        lightningLAN = Button(text='esotronic.net-LAN-Node', font_size=30, size_hint_y=0.15)
+        root.add_widget(lightningLAN)
+        lightningOFF = Button(text='OFF', font_size=30, size_hint_y=0.15)
         root.add_widget(lightningOFF)
         
         popup = Popup(title="Lightning configuration", content=root,
@@ -108,7 +110,8 @@ class MainPanel(Screen):
             self.lightning =  True
             popup.dismiss()
 
-        lightningON.bind(on_press=lnd_on)
+        lightningLAN.bind(on_press=lnd_on)
+        lightningBIT.bind(on_press=lnd_on)
         
         popup.open()
         
@@ -182,17 +185,19 @@ class MainPanel(Screen):
         for ing in self.drinkOnScreen[args[0]]["recipe"]:
             list_ing = list_ing + ingredients[ing[0]][0] + ": " + str(ing[1]) + "\n"
             
-        
         root2.add_widget(
             Label(text=list_ing + '\nPlease be sure\nthat a glass with min 200 ml \nis placed onto the black fixture.', font_size='20sp'))
         root.add_widget(root2)
 
+        root3 = BoxLayout()
         if not self.lightning:
             contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
-            root.add_widget(contentOK)
+            root3.add_widget(contentOK)
 
         contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
-        root.add_widget(contentCancel)
+        root3.add_widget(contentCancel)
+        
+        root.add_widget(root3)
 
         popup = Popup(title=self.drinkOnScreen[args[0]]["name"], content=root,
                       auto_dismiss=False)

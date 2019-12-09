@@ -223,7 +223,7 @@ MyScreenManager:
             orientation: 'horizontal'
             Button:
                 size_hint_x: 0.2
-                text: 'activate Lightning'
+                text: 'activate lnd'
                 on_press: 
                     self.opacity = 0
                     self.size_hint_y = 0
