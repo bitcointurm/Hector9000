@@ -66,7 +66,6 @@ class MainPanel(Screen):
         super(MainPanel, self).__init__(**kwargs)
 
         self.db = Database("h9k")
-
         self.db.createIfNotExists()
 
         self.screenPage = 1
@@ -79,9 +78,41 @@ class MainPanel(Screen):
 
         self.drinkOnScreen = list()
         self.drinkOnScreen = drink_list[:8]
-
+        
         self.fillButtons(self.drinkOnScreen)
         self.initVent()
+        
+    def lightningSwitch(self):
+        root = BoxLayout(orientation='vertical')
+        
+        root2 = BoxLayout()
+        root2.add_widget(
+        Label(text='Do you want to run with Lightning active?', font_size='40sp'))
+        root.add_widget(root2)
+        
+        lightningON = Button(text='ON - this cannot get reverted without restart', font_size=60, size_hint_y=0.15)
+        root.add_widget(lightningON)
+        lightningOFF = Button(text='BACK', font_size=60, size_hint_y=0.15)
+        root.add_widget(lightningOFF)
+        
+        popup = Popup(title="Lightning configuration", content=root,
+                      auto_dismiss=False)
+
+        def lnd_off(button):
+            self.lightning =  False
+            popup.dismiss()
+
+        lightningOFF.bind(on_press=lnd_off)
+        
+        def lnd_on(button):
+            self.lightning =  True
+            popup.dismiss()
+
+        lightningON.bind(on_press=lnd_on)
+        
+        popup.open()
+        
+        
 
     def initVent(self):
         print("Prepare vets.")
@@ -96,6 +127,9 @@ class MainPanel(Screen):
             time.sleep(1)
             h.valve_close(vnum)
         h.light_off()
+        
+
+        
 
     def isalcoholic(self, drink):
         for ing, _ in drink["recipe"]:
@@ -127,6 +161,8 @@ class MainPanel(Screen):
         if len(self.drinkOnScreen) -1 < args[0]:
             print("no drinks found.")
             return
+        
+        print("Lightning:" + str(self.lightning))
         
         ## Start Script to create Invoice	
         if self.lightning:

@@ -1,7 +1,8 @@
 import sys
 import time
+import json
 from kivy.core.text import Label
-from kivy.properties import ListProperty, BooleanProperty, ObjectProperty
+from kivy.properties import ListProperty, BooleanProperty, ObjectProperty, StringProperty
 from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.popup import Popup
@@ -47,6 +48,33 @@ class Cleaner(Screen):
     drytime = 300
     colorOK = [0, 1, 0, 1]
     colorNOTOK = [1, 0, 0, 1]
+    
+    buttonText = ListProperty([StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty(),
+                               StringProperty()])
+    
     buttonColor = ListProperty([ListProperty(),
                                 ListProperty(),
                                 ListProperty(),
@@ -75,9 +103,10 @@ class Cleaner(Screen):
     def __init__(self, **kwargs):
         super(Cleaner, self).__init__(**kwargs)
         count = 0
-        while count < 24:
-            self.buttonColor[count] = self.colorOK
-            count += 1
+        x = json.load(open('servo_config.json'))
+        for key in x:
+            self.buttonColor[x[key]['channel']] = self.colorOK
+            self.buttonText[x[key]['channel']] = x[key]['name'] + ": " + x[key]['value']
 
     def changeButton(self, buttonid):
         if self.buttonColor[buttonid] == self.colorOK:
