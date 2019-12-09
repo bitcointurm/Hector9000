@@ -18,7 +18,7 @@ class Configure(Screen):
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(
-            Label(text='Do you realy want to close Stoshi24 ? \nThere will be no more drinks ....'))
+            Label(text='Do you realy want to close satoshi 24 ? \nThere will be no more drinks ....'))
         root.add_widget(root2)
 
         buttOK = Button(text='OK', font_size=60, size_hint_y=0.15)
@@ -75,7 +75,7 @@ class Cleaner(Screen):
     def __init__(self, **kwargs):
         super(Cleaner, self).__init__(**kwargs)
         count = 0
-        while count < 12:
+        while count < 24:
             self.buttonColor[count] = self.colorOK
             count += 1
 
