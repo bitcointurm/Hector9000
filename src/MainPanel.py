@@ -189,12 +189,12 @@ class MainPanel(Screen):
             Label(text=list_ing + '\nPlease be sure\nthat a glass with min 200 ml \nis placed onto the black fixture.', font_size='20sp'))
         root.add_widget(root2)
 
-        root3 = BoxLayout()
+        root3 = BoxLayout(size_hint_y=0.15)
         if not self.lightning:
-            contentOK = Button(text='OK', font_size=60, size_hint_y=0.15)
+            contentOK = Button(text='OK', font_size=60)
             root3.add_widget(contentOK)
 
-        contentCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
+        contentCancel = Button(text='Cancel', font_size=60)
         root3.add_widget(contentCancel)
         
         root.add_widget(root3)
