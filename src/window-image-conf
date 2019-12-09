@@ -92,37 +92,37 @@ MyScreenManager:
                     text: 'Ventil 13'
                     font_size: 20
                     id: pump13
-                    background_color: root.buttonColor[12]
+                    background_color: root.buttonColor[0]
                     on_press: root.changeButton(12)
                 Button:
                     text: 'Ventil 14'
                     font_size: 20
                     id: pump14
-                    background_color: root.buttonColor[13]
+                    background_color: root.buttonColor[1]
                     on_press: root.changeButton(13)
                 Button:
                     text: 'Ventil 15'
                     font_size: 20
                     id: pump15
-                    background_color: root.buttonColor[14]
+                    background_color: root.buttonColor[2]
                     on_press: root.changeButton(14)
                 Button:
                     text: 'Ventil 16'
                     font_size: 20
                     id: pump16
-                    background_color: root.buttonColor[15]
+                    background_color: root.buttonColor[3]
                     on_press: root.changeButton(15)
                 Button:
                     text: 'Ventil 17'
                     font_size: 20
                     id: pump17
-                    background_color: root.buttonColor[16]
+                    background_color: root.buttonColor[4]
                     on_press: root.changeButton(16)
                 Button:
                     text: 'Ventil 18'
                     font_size: 20
                     id: pump18
-                    background_color: root.buttonColor[17]
+                    background_color: root.buttonColor[5]
                     on_press: root.changeButton(17)
             BoxLayout:
                 orientation: 'vertical'
@@ -130,37 +130,37 @@ MyScreenManager:
                     text: 'Ventil 19'
                     font_size: 20
                     id: pump19
-                    background_color: root.buttonColor[18]
+                    background_color: root.buttonColor[6]
                     on_press: root.changeButton(18)
                 Button:
                     text: 'Ventil 20'
                     font_size: 20
                     id: pump20
-                    background_color: root.buttonColor[19]
+                    background_color: root.buttonColor[7]
                     on_press: root.changeButton(19)
                 Button:
                     text: 'Ventil 21'
                     font_size: 20
                     id: pump21
-                    background_color: root.buttonColor[20]
+                    background_color: root.buttonColor[8]
                     on_press: root.changeButton(20)
                 Button:
                     text: 'Ventil 22'
                     font_size: 20
                     id: pump22
-                    background_color: root.buttonColor[21]
+                    background_color: root.buttonColor[9]
                     on_press: root.changeButton(21)
                 Button:
                     text: 'Ventil 23'
                     font_size: 20
                     id: pump23
-                    background_color: root.buttonColor[22]
+                    background_color: root.buttonColor[10]
                     on_press: root.changeButton(22)
                 Button:
                     text: 'Ventil 24'
                     font_size: 20
                     id: pump24
-                    background_color: root.buttonColor[23]
+                    background_color: root.buttonColor[11]
                     on_press: root.changeButton(23)
         BoxLayout:
             orientation: 'horizontal'
