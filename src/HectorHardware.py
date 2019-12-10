@@ -13,7 +13,7 @@ import sys
 import Adafruit_PCA9685
 from HectorConfig import config
 
-import board, neopixel
+import neopixel
 
 # Uncomment to enable debug output.
 import logging
