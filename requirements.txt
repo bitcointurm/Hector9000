@@ -17,6 +17,7 @@ Pygments
 #pywin32
 requests
 urllib3
-board
+#board  ## use adafruit_blinka which include board
+adafruit_blinka
 
 

@@ -13,6 +13,8 @@ import sys
 import Adafruit_PCA9685
 from HectorConfig import config
 
+import board, neopixel
+
 # Uncomment to enable debug output.
 import logging
 
@@ -54,9 +56,14 @@ class HectorHardware:
             
             self.fingerChannel = cfg["pca9685"]["fingerchannel"]
             self.fingerPositions = cfg["pca9685"]["fingerpositions"]
+            
             self.lightPin = cfg["pca9685"]["lightpin"]
             self.lightChannel = cfg["pca9685"]["lightpwmchannel"]
             self.lightPositions = cfg["pca9685"]["lightpositions"]
+            
+            self.LEDChannels = cfg["ws2812"]["NUM"]
+            PORT = board.D18
+            self.pixels = neopixel.NeoPixel(PORT, LEDChannels)
 
             print("arm step + dir")
             self.armEnable = cfg["a4988"]["ENABLE"]
@@ -77,6 +84,7 @@ class HectorHardware:
             GPIO.output(self.armSleep, True)
             GPIO.setup(self.armStep, GPIO.OUT)
             GPIO.setup(self.armDir, GPIO.OUT)
+            
         print("done")
 
         self.arm = cfg["arm"]["SENSE"]
@@ -163,6 +171,15 @@ class HectorHardware:
         if not devEnvironment:
             GPIO.setup(self.pump, GPIO.IN)
 
+    def pixel_on(self, ch):
+        self.pixels[ch] = (255,0,0)
+        self.pixels[ch + 24] = (255,0,0)
+        self.pixels.show()
+        
+    def pixel_off(self):
+        self.pixels.fill((0,0,0))
+        self.pixels.show()
+
     def valve_open(self, index, open=1):
         if (index < 0 and index >= len(self.valveChannels) - 1):
             return
@@ -191,7 +208,9 @@ class HectorHardware:
                 return
             t0 = time.time()
             self.scale_tare()
+            self.pixel_on(index)
             self.pump_start()
+            self.pixels.show()
             self.valve_open(index)
             sr = self.scale_readout()
             while sr < amount:
@@ -202,6 +221,7 @@ class HectorHardware:
                     return -1
                 time.sleep(0.1)
             self.pump_stop()
+            self.pixel_off()
             self.valve_close(index)
         return sr
 
