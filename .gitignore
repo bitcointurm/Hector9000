@@ -92,9 +92,11 @@ src/nohup\.out
 *.bak
 src/lnd/temp/
 *lnd-invoicetoqr.config
+src/lnd/input.txt
 *.log
 *.macaroon
 *.cert
+*.save
 
 ## Pictures
 *.png
