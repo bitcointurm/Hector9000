@@ -87,7 +87,7 @@ class MainPanel(Screen):
         
         root2 = BoxLayout()
         root2.add_widget(
-        Label(text='Do you want to get connected to a lightning node?\n Choose wisely, because this panel can be used once only!', font_size='40sp'))
+        Label(text='Do you want to get connected to a lightning node?\n\n Choose wisely,\n because this panel\n can be used once only!', font_size='30sp'))
         root.add_widget(root2)
         
         lightningBIT = Button(text='Bitcoin im Turm-Node (inactive)', font_size=30, size_hint_y=0.15)

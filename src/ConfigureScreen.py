@@ -19,14 +19,16 @@ class Configure(Screen):
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         root2.add_widget(
-            Label(text='Do you realy want to close satoshi 24 ? \nThere will be no more drinks ....'))
+            Label(text='Do you realy want to close satoshi 24 ? \nThere will be no more drinks ....', font_size='35sp'))
         root.add_widget(root2)
 
-        buttOK = Button(text='OK', font_size=60, size_hint_y=0.15)
-        root.add_widget(buttOK)
+        root3 = BoxLayout(size_hint_y=0.15)
+        buttOK = Button(text='OK', font_size=60)
+        root3.add_widget(buttOK)
 
-        buttCancel = Button(text='Cancel', font_size=60, size_hint_y=0.15)
-        root.add_widget(buttCancel)
+        buttCancel = Button(text='Cancel', font_size=60)
+        root3.add_widget(buttCancel)
+        root.add_widget(root3)
 
         popup = Popup(title='WAIT !!!', content=root,
                       auto_dismiss=False)
