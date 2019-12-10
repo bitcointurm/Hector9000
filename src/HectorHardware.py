@@ -13,7 +13,7 @@ import sys
 import Adafruit_PCA9685
 from HectorConfig import config
 
-import neopixel
+#import neopixel
 
 # Uncomment to enable debug output.
 import logging
@@ -61,9 +61,9 @@ class HectorHardware:
             self.lightChannel = cfg["pca9685"]["lightpwmchannel"]
             self.lightPositions = cfg["pca9685"]["lightpositions"]
             
-            self.LEDChannels = cfg["ws2812"]["NUM"]
-            PORT = board.D18
-            self.pixels = neopixel.NeoPixel(PORT, LEDChannels)
+            #self.LEDChannels = cfg["ws2812"]["NUM"]
+            #PORT = board.D18
+            #self.pixels = neopixel.NeoPixel(PORT, LEDChannels)
 
             print("arm step + dir")
             self.armEnable = cfg["a4988"]["ENABLE"]
@@ -210,7 +210,8 @@ class HectorHardware:
             self.scale_tare()
             self.pixel_on(index)
             self.pump_start()
-            self.pixels.show()
+            #self.pixels.show()
+            s = subprocess.check_output(["sh","neo.sh"])
             self.valve_open(index)
             sr = self.scale_readout()
             while sr < amount:
@@ -221,7 +222,7 @@ class HectorHardware:
                     return -1
                 time.sleep(0.1)
             self.pump_stop()
-            self.pixel_off()
+            #self.pixel_off()
             self.valve_close(index)
         return sr
 
