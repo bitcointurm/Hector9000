@@ -211,7 +211,7 @@ class HectorHardware:
             self.scale_tare()
             #self.pixel_on(index)
             self.pump_start()
-            s = subprocess.check_output(["sh","neo.sh"])
+            subprocess.run(["sh","neo.sh"])
             self.valve_open(index)
             sr = self.scale_readout()
             while sr < amount:
