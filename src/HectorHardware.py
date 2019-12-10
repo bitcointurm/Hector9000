@@ -171,14 +171,14 @@ class HectorHardware:
         if not devEnvironment:
             GPIO.setup(self.pump, GPIO.IN)
 
-    def pixel_on(self, ch):
-        self.pixels[ch] = (255,0,0)
-        self.pixels[ch + 24] = (255,0,0)
-        self.pixels.show()
+    #def pixel_on(self, ch):
+        #self.pixels[ch] = (255,0,0)
+        #self.pixels[ch + 24] = (255,0,0)
+        #self.pixels.show()
         
-    def pixel_off(self):
-        self.pixels.fill((0,0,0))
-        self.pixels.show()
+    #def pixel_off(self):
+        #self.pixels.fill((0,0,0))
+        #self.pixels.show()
 
     def valve_open(self, index, open=1):
         if (index < 0 and index >= len(self.valveChannels) - 1):
