@@ -12,6 +12,7 @@ import time
 import sys
 import Adafruit_PCA9685
 from HectorConfig import config
+import subprocess
 
 #import neopixel
 
