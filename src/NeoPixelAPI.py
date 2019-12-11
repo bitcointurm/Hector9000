@@ -25,7 +25,7 @@ if ch < NUM_VALVES:
 else: ### 
     pixels.fill((r,g,b))
     
-pixels.show()
+#pixels.show()
 
 time.sleep(.1)
 
