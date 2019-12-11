@@ -128,8 +128,10 @@ class MainPanel(Screen):
         for vnum in range(24):
             print("Vent %d closing..." % (vnum,))
             time.sleep(1)
+            h.pixel_on(vnum)
             h.valve_close(vnum)
         h.light_off()
+        h.pixel_off()
         
 
         

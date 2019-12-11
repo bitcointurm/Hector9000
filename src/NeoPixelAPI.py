@@ -5,6 +5,8 @@ import sys
 
 PORT = board.D18
 NUM = 48
+NUM_VALVES = 24
+
 
 pixels = neopixel.NeoPixel(PORT, NUM)
 
@@ -15,10 +17,11 @@ print sys.argv[2] # Color R
 print sys.argv[3] # Color G
 print sys.argv[4] # Color B
 
-if (sys.argv[1] < NUM):
+if sys.argv[1] < NUM_VALVE:
     pixels[sys.argv[1]] = (sys.argv[2],sys.argv[3],sys.argv[4])
-else:
-    pixels.fill(0,0,0)
+    pixels[sys.argv[1]+NUM_VALVES] = (sys.argv[2],sys.argv[3],sys.argv[4])
+else: ### 
+    pixels.fill((sys.argv[2],sys.argv[3],sys.argv[4]))
     
 pixels.show()
 

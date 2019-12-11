@@ -183,8 +183,10 @@ class HectorHardware:
             return
         if open == 0:
             print("close valve no. %d" % index)
+            self.pixel_off()
         else:
             print("open valve no. %d" % index)
+            self.pixel_on(index)
         ch = self.valveChannels[index]
         pos = self.valvePositions[index][1 - open]
         print("ch %d, pos %d" % (ch, pos))
@@ -206,7 +208,6 @@ class HectorHardware:
                 return
             t0 = time.time()
             self.scale_tare()
-            self.pixel_on(index)
             self.pump_start()
             self.valve_open(index)
             sr = self.scale_readout()
@@ -218,7 +219,6 @@ class HectorHardware:
                     return -1
                 time.sleep(0.1)
             self.pump_stop()
-            self.pixel_off()
             self.valve_close(index)
         return sr
 
