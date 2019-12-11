@@ -172,14 +172,11 @@ class HectorHardware:
         if not devEnvironment:
             GPIO.setup(self.pump, GPIO.IN)
 
-    #def pixel_on(self, ch):
-        #self.pixels[ch] = (255,0,0)
-        #self.pixels[ch + 24] = (255,0,0)
-        #self.pixels.show()
+    def pixel_on(self, ch):
+        subprocess.run(["sh","neo.sh " + ch + " 255 0 0"])
         
-    #def pixel_off(self):
-        #self.pixels.fill((0,0,0))
-        #self.pixels.show()
+    def pixel_off(self):
+        subprocess.run(["sh","neo.sh 100 0 0 0"])
 
     def valve_open(self, index, open=1):
         if (index < 0 and index >= len(self.valveChannels) - 1):
@@ -209,9 +206,8 @@ class HectorHardware:
                 return
             t0 = time.time()
             self.scale_tare()
-            #self.pixel_on(index)
+            self.pixel_on(index)
             self.pump_start()
-            subprocess.run(["sh","neo.sh"])
             self.valve_open(index)
             sr = self.scale_readout()
             while sr < amount:
@@ -222,7 +218,7 @@ class HectorHardware:
                     return -1
                 time.sleep(0.1)
             self.pump_stop()
-            #self.pixel_off()
+            self.pixel_off()
             self.valve_close(index)
         return sr
 

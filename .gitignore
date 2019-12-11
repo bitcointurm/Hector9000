@@ -97,6 +97,7 @@ src/lnd/input.txt
 *.macaroon
 *.cert
 *.save
+*.csv
 
 ## Pictures
 *.png
