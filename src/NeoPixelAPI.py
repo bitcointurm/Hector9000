@@ -9,19 +9,21 @@ NUM_VALVES = 24
 
 
 pixels = neopixel.NeoPixel(PORT, NUM)
+ch = int(sys.argv[1])
+r = int(sys.argv[2])
+g = int(sys.argv[3])
+b = int(sys.argv[4])
 
+print(ch) # Channel
+print(r) # Color R
+print(g) # Color G
+print(b) # Color B
 
-print(sys.argv[0]) # prints NeoPixelAPI.py
-print(sys.argv[1]) # Channel
-print(sys.argv[2]) # Color R
-print(sys.argv[3]) # Color G
-print(sys.argv[4]) # Color B
-
-if sys.argv[1] < NUM_VALVES:
-    pixels[sys.argv[1]] = (sys.argv[2],sys.argv[3],sys.argv[4])
-    pixels[sys.argv[1]+NUM_VALVES] = (sys.argv[2],sys.argv[3],sys.argv[4])
+if ch < NUM_VALVES:
+    pixels[ch] = (r,g,b)
+    pixels[ch+NUM_VALVES] = (r,g,b)
 else: ### 
-    pixels.fill((sys.argv[2],sys.argv[3],sys.argv[4]))
+    pixels.fill((r,g,b))
     
 pixels.show()
 
