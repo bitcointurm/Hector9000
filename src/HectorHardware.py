@@ -173,7 +173,7 @@ class HectorHardware:
             GPIO.setup(self.pump, GPIO.IN)
 
     def pixel_on(self, ch):
-        subprocess.run(["sh","neo.sh " + ch + " 255 0 0"])
+        subprocess.run(["sh","neo.sh " + str(ch) + " 255 0 0"])
         
     def pixel_off(self):
         subprocess.run(["sh","neo.sh 100 0 0 0"])
