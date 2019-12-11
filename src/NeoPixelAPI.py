@@ -17,7 +17,7 @@ print(sys.argv[2]) # Color R
 print(sys.argv[3]) # Color G
 print(sys.argv[4]) # Color B
 
-if sys.argv[1] < NUM_VALVE:
+if sys.argv[1] < NUM_VALVES:
     pixels[sys.argv[1]] = (sys.argv[2],sys.argv[3],sys.argv[4])
     pixels[sys.argv[1]+NUM_VALVES] = (sys.argv[2],sys.argv[3],sys.argv[4])
 else: ### 
