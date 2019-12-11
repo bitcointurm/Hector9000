@@ -183,7 +183,6 @@ class HectorHardware:
             return
         if open == 0:
             print("close valve no. %d" % index)
-            self.pixel_off()
         else:
             print("open valve no. %d" % index)
             self.pixel_on(index)
@@ -200,6 +199,7 @@ class HectorHardware:
     def valve_close(self, index):
         if not devEnvironment:
             self.valve_open(index, open=0)
+            self.pixel_off()
 
     def valve_dose(self, index, amount, timeout=30):
         sr = 0
