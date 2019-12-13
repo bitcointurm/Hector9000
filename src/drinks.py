@@ -620,10 +620,7 @@ drink_list = [
         "sound": "music/TestRaspi.mp3",
         "active": False,
         "recipe": [
-            ("grenadine", 19),
-            ("lemonjuice", 19),
-            ("pineapple", 52),
-            ("ginger", 130)
+            ("blue", 100)
             ]
     }, {
         "name": "Sirup",
