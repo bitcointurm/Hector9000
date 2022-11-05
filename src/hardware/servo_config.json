@@ -1,0 +1,122 @@
+{
+	"pump_1": {
+		"name": "Pump 1",
+		"channel": 0,
+		"value": "rum"
+	},
+	"pump_2": {
+		"name": "Pump 2",
+		"channel": 1,
+		"value": "gin"
+	},
+	"pump_3": {
+		"name": "Pump 3",
+		"channel": 2,
+		"value": "vodka"
+	},
+	"pump_4": {
+		"name": "Pump 4",
+		"channel": 3,
+		"value": "whisky"
+	},
+	"pump_5": {
+		"name": "Pump 5",
+		"channel": 4,
+		"value": "grenadine"
+	},
+	"pump_6": {
+		"name": "Pump 6",
+		"channel": 5,
+		"value": "coconut"
+	},
+	"pump_7": {
+		"name": "Pump 7",
+		"channel": 6,
+		"value": "zitrone"
+	},
+	"pump_8": {
+		"name": "Pump 8",
+		"channel": 7,
+		"value": "annanas"
+	},
+	"pump_9": {
+		"name": "Pump 9",
+		"channel": 8,
+		"value": "tonic"
+	},
+	"pump_10": {
+		"name": "Pump 10",
+		"channel": 9,
+		"value": "lime"
+	},
+	"pump_11": {
+		"name": "Pump 11",
+		"channel": 10,
+		"value": "soda"
+	},
+	"pump_12": {
+		"name": "Pump 12",
+		"channel": 11,
+		"value": "cola"
+	},
+	"pump_13": {
+		"name": "Pump 13",
+		"channel": 12, 
+		"value": "brum"
+	},
+	"pump_14": {
+		"name": "Pump 14",
+		"channel": 13, 
+		"value": "kahlua"
+	},
+	"pump_15": {
+		"name": "Pump 15",
+		"channel": 14, 
+		"value": "orange"
+	},
+	"pump_16": {
+		"name": "Pump 16",
+		"channel": 15, 
+		"value": "marakuja"
+	},
+	"pump_17": {
+		"name": "Pump 17",
+		"channel": 16, 
+		"value": "apricot"
+	},
+	"pump_18": {
+		"name": "Pump 18",
+		"channel": 17, 
+		"value": "tequila"
+	},
+	"pump_19": {
+		"name": "Pump 19",
+		"channel": 18, 
+		"value": "cointreau"
+	},
+	"pump_20": {
+		"name": "Pump 20",
+		"channel": 19, 
+		"value": "ginger"
+	},
+	"pump_21": {
+		"name": "Pump 21",
+		"channel": 20, 
+		"value": "cranberry"
+	},
+	"pump_22": {
+		"name": "Pump 22",
+		"channel": 21, 
+		"value": "sahne"
+	},
+	"pump_23": {
+		"name": "Pump 23",
+		"channel": 22,
+		"value": "blue"
+	},
+	"pump_24": {
+		"name": "Pump 24",
+		"channel": 23, 
+		"value": "zuckersirup"
+	}
+}

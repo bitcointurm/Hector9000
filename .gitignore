@@ -95,10 +95,13 @@ src/lnd/temp/
 *.log
 *.macaroon
 *.cert
+src/backup
+src/payment/payment_conf.py
 
 ## Pictures
 *.png
 *.jpg
+*.JPG
 
 ##Music
 src/music
