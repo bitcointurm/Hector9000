@@ -225,7 +225,7 @@ MyScreenManager:
                 size_hint_x: 0.2
                 size_hint_y: 1
                 text: 'activate lnd'
-                on_press: 
+                on_press:
                     self.opacity = 0
                     self.size_hint_y = 0
                     root.lightningSwitch()
@@ -259,7 +259,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(0)
                     Image:
                         source: root.image[0]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -274,7 +274,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(1)
                     Image:
                         source: root.image[1]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -289,7 +289,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(2)
                     Image:
                         source: root.image[2]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -304,7 +304,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(3)
                     Image:
                         source: root.image[3]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -319,7 +319,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(4)
                     Image:
                         source: root.image[4]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
             BoxLayout:
@@ -346,7 +346,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(5)
                     Image:
                         source: root.image[5]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -361,7 +361,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(6)
                     Image:
                         source: root.image[6]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -376,7 +376,7 @@ MyScreenManager:
                     on_press: root.choiceDrink(7)
                     Image:
                         source: root.image[7]
-                    	nocache: True
+                        nocache: True
                         center_x: self.parent.center_x
                         center_y: self.parent.center_y-20
                 Button:
@@ -385,7 +385,3 @@ MyScreenManager:
                     background_color: 1,0,1,1
                     id: forward
                     on_press: root.forward()
-
-
-
-
