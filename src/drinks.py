@@ -315,7 +315,8 @@ drink_list = [
         "image": "img/nodl.jpg",
         "sound": "music/HodlerSong.mp3",
         "recipe": [
-            ("whisky", 40)
+            ("whisky", 40),
+            ("lime", 60)
         ]
     }, {
         "name": "Virgin Colada",
