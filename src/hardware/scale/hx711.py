@@ -17,7 +17,8 @@ class HX711:
           GPIO.setup(self.DOUT, GPIO.IN)
 
         self.GAIN = 0
-        self.REFERENCE_UNIT = 1  # The value returned by the hx711 that corresponds to your reference unit AFTER dividing by the SCALE.
+        self.REFERENCE_UNIT_LOW = 1  # The value returned by the hx711 that corresponds to your reference unit AFTER dividing by the SCALE.
+        self.REFERENCE_UNIT_HIGH = 1  # The value returned by the hx711 that corresponds to your reference unit AFTER dividing by the SCALE.
         
         self.OFFSET = 1
         self.lastVal = (0)
@@ -132,20 +133,28 @@ class HX711:
         return self.read_average(times) - self.OFFSET
 
     def get_weight(self, times=3):
+        reference_unit = 1
         value = self.get_value(times)
-        value = value / self.REFERENCE_UNIT
+        if value <= -384000:
+            reference_unit = self.REFERENCE_UNIT_HIGH
+        else:
+            reference_unit = self.REFERENCE_UNIT_LOW
+        value = value / reference_unit
         return value
 
     def tare(self, times=15):
        
         # Backup REFERENCE_UNIT value
-        reference_unit = self.REFERENCE_UNIT
-        self.set_reference_unit(1)
+        reference_unit_low = self.REFERENCE_UNIT_LOW
+        reference_unit_high = self.REFERENCE_UNIT_HIGH
+        self.set_reference_unit_low(1)
+        self.set_reference_unit_high(1)
 
         value = self.read_average(times)
         self.set_offset(value)
 
-        self.set_reference_unit(reference_unit)
+        self.set_reference_unit_low(reference_unit_low)
+        self.set_reference_unit_high(reference_unit_high)
         return value
 
     def set_reading_format(self, byte_format="LSB", bit_format="MSB"):
@@ -166,8 +175,11 @@ class HX711:
     def set_offset(self, offset):
         self.OFFSET = offset
 
-    def set_reference_unit(self, reference_unit):
-        self.REFERENCE_UNIT = reference_unit
+    def set_reference_unit_low(self, reference_unit):
+        self.REFERENCE_UNIT_LOW = reference_unit
+
+    def set_reference_unit_high(self, reference_unit):
+        self.REFERENCE_UNIT_HIGH = reference_unit
 
     # HX711 datasheet states that setting the PDA_CLOCK pin on high for >60 microseconds would power off the chip.
     # I used 100 microseconds, just in case.

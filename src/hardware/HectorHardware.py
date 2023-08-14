@@ -36,10 +36,12 @@ class HectorHardware:
 
             hx1 = cfg["hx711"]["CLK"]
             hx2 = cfg["hx711"]["DAT"]
-            hxref = cfg["hx711"]["ref"]
+            hxref_low = cfg["hx711"]["ref_low"]
+            hxref_high = cfg["hx711"]["ref_high"]
             self.hx = HX711(hx1, hx2)
             self.hx.set_reading_format("LSB", "MSB")
-            self.hx.set_reference_unit(hxref)
+            self.hx.set_reference_unit_low(hxref_low)
+            self.hx.set_reference_unit_high(hxref_high)
             self.hx.reset()
             self.hx.tare()
 
