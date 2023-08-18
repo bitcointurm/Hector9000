@@ -145,16 +145,14 @@ class HX711:
     def tare(self, times=15):
        
         # Backup REFERENCE_UNIT value
-        reference_unit_low = self.REFERENCE_UNIT_LOW
-        reference_unit_high = self.REFERENCE_UNIT_HIGH
-        self.set_reference_unit_low(1)
-        self.set_reference_unit_high(1)
+        ref_low = self.REFERENCE_UNIT_LOW
+        ref_high = self.REFERENCE_UNIT_HIGH
 
+        self.set_reference_unit(ref_low=1, ref_high=1)
         value = self.read_average(times)
         self.set_offset(value)
+        self.set_reference_unit(ref_low=ref_low, ref_high=ref_high)
 
-        self.set_reference_unit_low(reference_unit_low)
-        self.set_reference_unit_high(reference_unit_high)
         return value
 
     def set_reading_format(self, byte_format="LSB", bit_format="MSB"):
@@ -175,11 +173,9 @@ class HX711:
     def set_offset(self, offset):
         self.OFFSET = offset
 
-    def set_reference_unit_low(self, reference_unit):
-        self.REFERENCE_UNIT_LOW = reference_unit
-
-    def set_reference_unit_high(self, reference_unit):
-        self.REFERENCE_UNIT_HIGH = reference_unit
+    def set_reference_unit(self, ref_low, ref_high):
+        self.REFERENCE_UNIT_LOW = ref_low
+        self.REFERENCE_UNIT_HIGH = ref_high
 
     # HX711 datasheet states that setting the PDA_CLOCK pin on high for >60 microseconds would power off the chip.
     # I used 100 microseconds, just in case.

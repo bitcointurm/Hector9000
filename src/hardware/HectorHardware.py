@@ -6,7 +6,7 @@
 # imports
 from __future__ import division
 
-devEnvironment = False
+devEnvironment = True
 
 import time
 import sys
@@ -40,8 +40,7 @@ class HectorHardware:
             hxref_high = cfg["hx711"]["ref_high"]
             self.hx = HX711(hx1, hx2)
             self.hx.set_reading_format("LSB", "MSB")
-            self.hx.set_reference_unit_low(hxref_low)
-            self.hx.set_reference_unit_high(hxref_high)
+            self.hx.set_reference_unit(hxref_low, hxref_high)
             self.hx.reset()
             self.hx.tare()
 

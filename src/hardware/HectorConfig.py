@@ -3,8 +3,8 @@ config = {
     "hx711": {
         "CLK": 29,
         "DAT": 31,
-        "ref_low": -2777  # weight <= 130g
-        "ref_high": -2941  # weight > 130g
+        "ref_low": -2000,  # weight <= 130g
+        "ref_high": -2050  # weight > 130g
     },
     "pca9685": {
         "freq": 60,
