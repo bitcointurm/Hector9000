@@ -60,6 +60,15 @@ class MainPanel(Screen):
                                 ListProperty(),
                                 ListProperty()])
 
+    buttonColorPressed = ListProperty([ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty(),
+                                ListProperty()])
+
     #db = None
     drinkOnScreen = None
     screenPage = None
@@ -155,17 +164,17 @@ class MainPanel(Screen):
             if self.buttonText[count].startswith("..."):
                 self.buttonColor[count] = [.3, .3, .3, 1]
             elif self.isalcoholic(drinks[count]):
-                self.buttonColor[count] = [1, 0, 0, 1]
+                self.buttonColor[count] = [0.5, 0, 0, 1]
+                self.buttonColorPressed[count] = [0.7, 0, 0, 1]
             else: # non-alcoholic
-                self.buttonColor[count] = [0, 1, 0, 1]
+                self.buttonColor[count] = [0, 0.5, 0, 1]
+                self.buttonColorPressed[count] = [0, 0.7, 0, 1]
             count += 1
 
-        while count < 8:
-            self.buttonText[count] = ''
-            self.buttonColor[count] = [1, 1, 1, 1]
-            count += 1
+    def startChoiceDrink(self, drink):
+        Clock.schedule_once(partial(self.choiceDrink, drink), .1)
 
-    def choiceDrink(self, drink):
+    def choiceDrink(self, drink, *args):
         self.readPumpConfiguration()
         if len(self.drinkOnScreen) -1 < drink:
             print("no drinks found.")

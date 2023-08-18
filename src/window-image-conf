@@ -22,8 +22,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[0]
-                on_press: root.choiceDrink(0)
+                on_press:
+                    self.background_color = root.buttonColorPressed[0]
+                on_release:
+                    self.background_color = root.buttonColor[0]
+                    root.startChoiceDrink(0)
                 Image:
                     source: root.image[0]
                     nocache: True
@@ -37,8 +43,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[1]
-                on_press: root.choiceDrink(1)
+                on_press:
+                    self.background_color = root.buttonColorPressed[1]
+                on_release:
+                    self.background_color = root.buttonColor[1]
+                    root.startChoiceDrink(1)
                 Image:
                     source: root.image[1]
                     nocache: True
@@ -52,8 +64,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[2]
-                on_press: root.choiceDrink(2)
+                on_press:
+                    self.background_color = root.buttonColorPressed[2]
+                on_release:
+                    self.background_color = root.buttonColor[2]
+                    root.startChoiceDrink(2)
                 Image:
                     source: root.image[2]
                     nocache: True
@@ -67,8 +85,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[3]
-                on_press: root.choiceDrink(3)
+                on_press:
+                    self.background_color = root.buttonColorPressed[3]
+                on_release:
+                    self.background_color = root.buttonColor[3]
+                    root.startChoiceDrink(3)
                 Image:
                     source: root.image[3]
                     nocache: True
@@ -82,8 +106,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[4]
-                on_press: root.choiceDrink(4)
+                on_press:
+                    self.background_color = root.buttonColorPressed[4]
+                on_release:
+                    self.background_color = root.buttonColor[4]
+                    root.startChoiceDrink(4)
                 Image:
                     source: root.image[4]
                     nocache: True
@@ -107,8 +137,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[5]
-                on_press: root.choiceDrink(5)
+                on_press:
+                    self.background_color = root.buttonColorPressed[5]
+                on_release:
+                    self.background_color = root.buttonColor[5]
+                    root.startChoiceDrink(5)
                 Image:
                     source: root.image[5]
                     nocache: True
@@ -122,8 +158,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[6]
-                on_press: root.choiceDrink(6)
+                on_press:
+                    self.background_color = root.buttonColorPressed[6]
+                on_release:
+                    self.background_color = root.buttonColor[6]
+                    root.startChoiceDrink(6)
                 Image:
                     source: root.image[6]
                     nocache: True
@@ -137,8 +179,14 @@ MyScreenManager:
                 halign: 'center'
                 valign: 'top'
                 padding_y: 5
+                background_normal: ''
+                background_down: ''
                 background_color: root.buttonColor[7]
-                on_press: root.choiceDrink(7)
+                on_press:
+                    self.background_color = root.buttonColorPressed[7]
+                on_release:
+                    self.background_color = root.buttonColor[7]
+                    root.startChoiceDrink(7)
                 Image:
                     source: root.image[7]
                     nocache: True
