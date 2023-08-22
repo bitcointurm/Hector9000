@@ -1,6 +1,7 @@
 import time
 import json
-#from database import Database
+import random
+from databases.database import Database
 from drinks import drink_list, ingredients
 from functools import partial
 from kivy.clock import Clock
@@ -25,13 +26,6 @@ from pathlib import Path
 import subprocess
 #import payments
 	
-## logging
-#import logging
-#log_format = "%(asctime)s::%(levelname)s::%(name)s::"\
-#                     "%(filename)s::%(lineno)d::%(message)s"
-#log_format = "%(asctime)s:%(levelname)s:%(message)s"
-#logging.basicConfig(filename="/home/pi/log/cocktail.log", filemode='w', level=logging.DEBUG, format=log_format)  ###TODO: put log location into config
-
 class MainPanel(Screen):
     buttonText = ListProperty([StringProperty(),
                                StringProperty(),
@@ -69,7 +63,7 @@ class MainPanel(Screen):
                                 ListProperty(),
                                 ListProperty()])
 
-    #db = None
+    db = None
     drinkOnScreen = None
     screenPage = None
     maxScreenPage = None
@@ -84,8 +78,8 @@ class MainPanel(Screen):
     def __init__(self, **kwargs):
         super(MainPanel, self).__init__(**kwargs)
 
-        #self.db = Database("h9k")
-        #self.db.createIfNotExists()
+        self.db = Database("databases/h9k")
+        self.db.create_tables_if_not_exist()
 
         self.screenPage = 1
 
@@ -204,7 +198,7 @@ class MainPanel(Screen):
             list_ing = list_ing + ingredients[ing[0]][0] + ": " + str(ing[1]) + "\n"
             
         root2.add_widget(
-            Label(text=list_ing + '\nPlease be sure\nthat a glass with min 200 ml \nis placed onto the black fixture.', font_size='20sp'))
+            Label(text=list_ing + '\nPlease be sure\nthat a glass with min 200 ml \nis placed onto the red fixture.', font_size='20sp'))
         root.add_widget(root2)
 
         root3 = BoxLayout(size_hint_y=0.15)
@@ -219,9 +213,6 @@ class MainPanel(Screen):
 
         popup = Popup(title=self.drinkOnScreen[drink]["name"], content=root,
                       auto_dismiss=False)
-
-        #logging.debug(self.drinkOnScreen[drink]["name"])
-        #Logger.info(f"Cocktail: {self.drinkOnScreen[drink]['name']}")
 
         def close_popup_and_give_drink(button):
             popup.dismiss()
@@ -268,8 +259,12 @@ class MainPanel(Screen):
 
     def doGiveDrink(self, drink, intervaltime):
         root = BoxLayout(orientation='vertical')
-        content = Label(text='Take a break -- \nYour \n\n' + self.drinkOnScreen[drink]["name"]+'\n\nwill be mixed.', font_size='40sp')
-        root.add_widget(content)
+
+        root2 = BoxLayout()
+        root2.add_widget(Image(source=self.drinkOnScreen[drink]["image"]))
+        content = Label(text='Take a break -- \nYour \n\n' + self.drinkOnScreen[drink]["name"]+'\n\nwill be mixed.', font_size='30sp')
+        root2.add_widget(content)
+        root.add_widget(root2)
         popup = Popup(title='Life, the Universe, and Everything. There is an answer.', content=root, auto_dismiss=False)
 
         if (self.drinkOnScreen[drink]["sound"]):
@@ -280,7 +275,15 @@ class MainPanel(Screen):
 
 
         def makeDrink(parentwindow):
-            drinks = self.drinkOnScreen[drink]
+            if self.drinkOnScreen[drink]['name'] == 'FTX':
+                for _drink in drink_list:
+                    if _drink['name'] == 'iota':
+                        drinks = _drink
+            elif self.drinkOnScreen[drink]['name'] == 'NFT':
+                random_drink = random.randint(0, len(drink_list)-3)
+                drinks = drink_list[random_drink]
+            else:
+                drinks = self.drinkOnScreen[drink]
 
             hector = HectorHardware(config)
             hector.light_on()
@@ -289,16 +292,17 @@ class MainPanel(Screen):
             Logger.info(f"Cocktail: {drinks['name']}")
 
             for ingredient in drinks["recipe"]:
-                hector.valve_dose(pumpList[ingredient[0]], ingredient[1])
+                factor = 7
+                hector.valve_dose(pumpList[ingredient[0]], ingredient[1] - factor)
                 time.sleep(.1)
                 print("IndexPumpe: ", pumpList[ingredient[0]])
                 print("Ingredient: ", ingredient[0])
                 print("Output in ml: ", ingredient[1])
-                #self.db.countUpIngredient(ingredient[0],ingredient[1])
+                self.db.count_up_ingredient(ingredient[0],ingredient[1])
                 Logger.info(f"Ingredients: {ingredient[0]} - {ingredient[1]}")
 
             time.sleep(1)
-            #self.db.countUpDrink(drinks["name"])
+            self.db.count_up_drink(drinks["name"])
             hector.arm_in()
             hector.light_off()
             hector.finger(1)
