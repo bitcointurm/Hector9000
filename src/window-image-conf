@@ -33,8 +33,10 @@ MyScreenManager:
                 Image:
                     source: root.image[0]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink2
                 font_size: 20
@@ -54,8 +56,10 @@ MyScreenManager:
                 Image:
                     source: root.image[1]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink3
                 font_size: 20
@@ -75,8 +79,10 @@ MyScreenManager:
                 Image:
                     source: root.image[2]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink4
                 font_size: 20
@@ -96,8 +102,10 @@ MyScreenManager:
                 Image:
                     source: root.image[3]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink5
                 font_size: 20
@@ -117,8 +125,10 @@ MyScreenManager:
                 Image:
                     source: root.image[4]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
         BoxLayout:
             spacing: 5
             padding: 5
@@ -148,8 +158,10 @@ MyScreenManager:
                 Image:
                     source: root.image[5]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink7
                 font_size: 20
@@ -169,8 +181,10 @@ MyScreenManager:
                 Image:
                     source: root.image[6]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 id: drink8
                 font_size: 20
@@ -190,8 +204,10 @@ MyScreenManager:
                 Image:
                     source: root.image[7]
                     nocache: True
-                    center_x: self.parent.center_x
-                    center_y: self.parent.center_y-20
+                    size_hint: None, None
+                    size: self.parent.width * 0.85, self.parent.height * 0.85
+                    center_x: self.parent.center_x - 23
+                    center_y: self.parent.center_y - self.height * 0.15
             Button:
                 text: '-->'
                 font_size: 50
