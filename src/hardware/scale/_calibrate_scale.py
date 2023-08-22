@@ -2,7 +2,7 @@ from hx711 import HX711
 
 hx = HX711(29,31)
 hx.set_reading_format("LSB", "MSB")
-hx.set_reference_unit(-2000,-2050)
+hx.set_reference_unit(-2050,-2100)
 hx.reset()
 hx.tare()
 
