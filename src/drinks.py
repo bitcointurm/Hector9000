@@ -16,7 +16,7 @@ drink_list = [
     }, {
         "name": "Nasty Ass Honey Badger",
         "sound": "music/Honeybadger.mp3",
-        "image": "img/honeybadger.jpg",
+        "image": "img/honeybadger.png",
         "recipe": [
             ("rum", 40),
             ("gin", 80),
@@ -290,7 +290,7 @@ drink_list = [
         ]
     }, {
         "name": "7 tall black women",
-        "image": "img/nodl.jpg",
+        "image": "img/giacomo.png",
         "sound": "music/giacomo.mp3",
         "recipe": [
             ("rum", 10),
@@ -342,7 +342,7 @@ drink_list = [
         "image": "img/iota.jpg",
         "sound": "music/iota.mp3",
         "recipe": [
-            ("soda", 10)
+            ("soda", 13)
         ]
     }, {
         "name": "The Starkness",
@@ -378,11 +378,27 @@ drink_list = [
             ("cola", 141)
         ]
     }, {
-        "name": "Tequila",
-        "image": "img/tequila.png",
+        "name": "NFT",
+        "image": "img/NFT.png",
         "sound": "music/tequila.mp3",
         "recipe": [
-            ("tequila", 40)
+            ("money", "XXX"),
+            ("pride", "XXX"),
+            ("fame", "XXX"),
+            ("beauty", "XXX")
+        ]
+    }, {
+        "name": "FTX",
+        "image": "img/tequila.png",
+        "sound": "music/FTX.mp3",
+        "recipe": [
+            ("gin", 19),
+            ("vodka", 19),
+            ("zitrone", 19),
+            ("cola", 95),
+            ("tequila", 19),
+            ("cointreau", 10),
+            ("zuckersirup", 19)
         ]
     }
 ]
@@ -413,6 +429,10 @@ ingredients = {
     "sahne": ("Sahne", False),
     "blue": ("Blue", False),
     "zuckersirup": ("Zuckersirup", False),
+    "money": ("Money", True),
+    "pride": ("Pride", True),
+    "fame": ("Fame", True),
+    "beauty": ("Beauty", True),
 }
 
 
