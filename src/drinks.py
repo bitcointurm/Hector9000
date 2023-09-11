@@ -6,7 +6,7 @@ drink_list = [
         "sound": "music/SatoshiCountry.mp3",
         "image": "img/BtcImTurm.png",
         "recipe": [
-            ("coconut", 6),
+            ("coconut", 12),
             ("zitrone", 25),
             ("brum", 52),
             ("kahlua", 13),
@@ -180,9 +180,9 @@ drink_list = [
         "recipe": [
             ("whisky", 22),
             ("zitrone", 33),
-            ("lime", 11),
+            ("lime", 12),
             ("zuckersirup", 22),
-            ("cointreau", 4),
+            ("cointreau", 12),
             ("soda", 108)
         ]
     }, {
@@ -190,12 +190,12 @@ drink_list = [
         "sound": "music/giacomo.mp3",
         "image": "img/giacomo.png",
         "recipe": [
-            ("rum", 10),
+            ("rum", 12),
             ("gin", 20),
-            ("vodka", 10),
+            ("vodka", 12),
             ("coconut", 20),
             ("tonic", 20),
-            ("lime", 10),
+            ("lime", 12),
             ("cola", 40)
         ]
     }, {
@@ -324,7 +324,7 @@ drink_list = [
         "sound": "music/runningman.mp3",
         "image": "img/Runner.png",
         "recipe": [
-            ("coconut", 9),
+            ("coconut", 12),
             ("zitrone", 18),
             ("brum", 46),
             ("marakuja", 55),
