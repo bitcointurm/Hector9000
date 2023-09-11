@@ -4,113 +4,42 @@ drink_list = [
     {
         "name": "Bitcoin im Turm",
         "sound": "music/SatoshiCountry.mp3",
-        "image": "img/bitcoinimturm.png",
+        "image": "img/BtcImTurm.png",
         "recipe": [
             ("coconut", 6),
             ("zitrone", 25),
-            ("annanas", 52),
             ("brum", 52),
             ("kahlua", 13),
-            ("orange", 52)
+            ("orange", 52),
+            ("annanas", 52)
         ]
     }, {
-        "name": "Nasty Ass Honey Badger",
-        "sound": "music/Honeybadger.mp3",
-        "image": "img/honeybadger.png",
+        "name": "Mem Pool",
+        "sound": "music/BtcParadise.mp3",
+        "image": "img/Mempool.png",
         "recipe": [
-            ("rum", 40),
-            ("gin", 80),
-            ("coconut", 20),
-            ("lime", 10),
-            ("cola", 120),
+            ("sahne", 21),
+            ("vodka", 42),
+            ("coconut", 21),
+            ("blue", 11),
+            ("annanas", 105)
         ]
     }, {
-        "name": "Sats on the beach",
-        "sound": "music/PlebRap.mp3",
-        "image": "img/PlebRap.jpg",
+        "name": "Mises Sour",
+        "sound": "music/Mises.mp3",
+        "image": "img/mises.jpg",
         "recipe": [
-            ("vodka", 35),
-            ("orange", 68),
-            ("apricot", 17),
-            ("cranberry", 68),
-            ("zuckersirup", 12)
-        ]
-    }, {
-        "name": "JodlHodler",
-        "sound": "music/Jodler.mp3",
-        "image": "img/JodlHodler.png",
-        "recipe": [
-            ("gin", 50),
-            ("zitrone", 30),
-            ("tonic", 50),
-            ("soda", 50),
-            ("zuckersirup", 20)
-        ]
-    }, {
-        "name": "Rübble isch ok",
-        "image": "img/ruebble.jpg",
-        "sound": "music/RuebbleHelga.mp3",
-        "recipe": [
-            ("soda", 100),
-            ("ginger", 80),
-            ("zuckersirup", 20)
-        ]
-    }, {
-        "name": "Format C",
-        "image": "img/reckless.png",
-        "sound": "music/reckless.mp3",
-        "recipe": [
-            ("gin", 19),
-            ("vodka", 19),
-            ("zitrone", 19),
-            ("cola", 95),
-            ("tequila", 19),
-            ("cointreau", 10),
-            ("zuckersirup", 19)
-        ]
-    }, {
-        "name": "Gin Toxic",
-        "image": "img/toxic21.jpg",
-        "sound": "music/saufen.mp3",
-        "recipe": [
-            ("gin", 63),
-            ("tonic", 116),
-            ("lime", 21),
-        ]
-    }, {
-        "name": "Bitcoin Runners Cocktail",
-        "image": "img/Runner.png",
-        "sound": "music/runningman.mp3",
-        "recipe": [
-            ("coconut", 9),
-            ("zitrone", 18),
-            ("annanas", 72),
-            ("brum", 46),
-            ("marakuja", 55)
-        ]
-    }, {
-        "name": "Bitcoin Chicks on the Blocks",
-        "image": "img/BtcChicks.jpg",
-        "sound": "music/girlsfun.mp3",
-        "recipe": [
-            ("vodka", 58),
-            ("grenadine", 14),
-            ("lime", 14),
-            ("cointreau", 14)
-        ]
-    }, {
-        "name": "Was Bitcoin drinkt",
-        "image": "img/WasBtcDrinkt.png",
-        "sound": "music/HodlerSong.mp3",
-        "recipe": [
-            ("vodka", 46),
-            ("lime", 18),
-            ("ginger", 136)
+            ("rum", 35),
+            ("zitrone", 10),
+            ("lime", 25),
+            ("marakuja", 65),
+            ("apricot", 35),
+            ("blue", 10)
         ]
     }, {
         "name": "Posch Punch",
-        "image": "img/PoschPunch.png",
         "sound": "music/antonop.mp3",
+        "image": "img/PoschPunch.png",
         "recipe": [
             ("rum", 24),
             ("grenadine", 12),
@@ -119,179 +48,147 @@ drink_list = [
             ("orange", 94)
         ]
     }, {
-        "name": "Fomo",
-        "image": "img/fomo.jpg",
-        "sound": "music/fomo.mp3",
+        "name": "Cuba Libra",
+        "sound": "music/shitcoinrage.mp3",
+        "image": "img/CubaLibra.png",
         "recipe": [
-            ("rum", 53),
-            ("lime", 29),
-            ("zuckersirup", 18)
+            ("rum", 47),
+            ("lime", 12),
+            ("cola", 141)
         ]
     }, {
-        "name": "Block Driver",
-        "image": "img/BlockDriver.jpg",
-        "sound": "music/fueruberfiat2.mp3",
-        "recipe": [
-            ("grenadine", 17),
-            ("zitrone", 17),
-            ("annanas", 48),
-            ("ginger", 118)
-        ]
-    }, {
-        "name": "Touch Down",
-        "image": "img/TouchDown.png",
-        "sound": "music/iota.mp3",
-        "recipe": [
-            ("grenadine", 12),
-            ("zitrone", 24),
-            ("vodka", 46),
-            ("apricot", 24),
-            ("marakuja", 94)
-        ]
-    }, {
-        "name": "Bavarian Badger",
-        "image": "img/badger.jpg",
-        "sound": "music/HodlerSong.mp3",
-        "recipe": [
-            ("gin", 40),
-            ("grenadine", 20),
-            ("tonic", 100),
-            ("lime", 20)
-        ]
-    }, {
-        "name": "Lina Colada",
-        "image": "img/LinaColada.png",
-        "sound": "music/StackingSats.mp3",
-        "recipe": [
-            ("rum", 25),
-            ("coconut", 25),
-            ("annanas", 100),
-            ("brum", 25),
-            ("sahne", 25)
-        ]
-    }, {
-        "name": "Bitcoin Plunge",
-        "image": "img/BtcPlunge.png",
-        "sound": "music/fomo.mp3",
-        "recipe": [
-            ("vodka", 34),
-            ("kahlua", 33),
-            ("sahne", 33)
-        ]
-    }, {
-        "name": "Hal Ginny",
-        "image": "img/halfinney.png",
-        "sound": "music/SatoshiCountry.mp3",
-        "recipe": [
-            ("gin", 40),
-            ("zitrone", 80),
-            ("cola", 80)
-        ]
-    }, {
-        "name": "Mem Pool",
-        "sound": "music/PlebRap.mp3",
-        "image": "img/Mempool.png",
-        "recipe": [
-            ("vodka", 42),
-            ("coconut", 21),
-            ("annanas", 105),
-            ("sahne", 21),
-            ("blue", 11)
-        ]
-    },{
-        "name": "Vodka Livera",
-        "image": "img/livera.png",
-        "sound": "music/HodlerSong.mp3",
-        "recipe": [
-            ("vodka", 40),
-            ("lime", 10),
-            ("soda", 150)
-        ]
-    }, {
-        "name": "Whisky Sour",
-        "image": "img/WhiskySour.png",
-        "sound": "music/iota.mp3",
-        "recipe": [
-            ("whisky", 47),
-            ("zitrone", 37),
-            ("zuckersirup", 16)
-        ]
-    }, {
-        "name": "Bitcoins Sunrise",
-        "image": "img/BtcSunrise.png",
-        "sound": "music/fueruberfiat1.mp3",
-        "recipe": [
-            ("grenadine", 20),
-            ("orange", 120),
-            ("tequila", 60)
-        ]
-    }, {
-        "name": "Screwdriver",
-        "image": "img/ScrewDriver.png",
-        "sound": "music/StackingSats.mp3",
-        "recipe": [
-            ("vodka", 66),
-            ("orange", 134)
-        ]
-    }, {
-        "name": "What Bitcoin Did",
-        "image": "img/whatbitcoindid.png",
-        "sound": "music/obama.mp3",
-        "recipe": [
-            ("rum", 40),
-            ("cola", 160)
-        ]
-    }, {
-        "name": "Ful Mule",
-        "image": "img/FulMule.jpg",
-        "sound": "music/fueruberfiat2.mp3",
-        "recipe": [
-            ("whisky", 46),
-            ("lime", 18),
-            ("ginger", 136)
-        ]
-    }, {
-        "name": "It's a Bubble",
-        "image": "img/BtcBubble.png",
-        "sound": "music/fomo.mp3",
-        "recipe": [
-            ("whisky", 27),
-            ("cola", 173)   
-        ]
-    }, {
-        "name": "Stacking Sats",
-        "image": "img/TFTC.png",
-        "sound": "music/StackingSats.mp3",
-        "recipe": [
-            ("vodka", 40),
-            ("lime", 10),
-            ("soda", 150)
-        ]
-    }, {
-        "name": "Lightning Lemonade",
-        "image": "img/LightningLimo.jpg",
-        "sound": "music/PlebRap.mp3",
-        "recipe": [
-            ("whisky", 22),
-            ("zitrone", 33),
-            ("lime", 11),
-            ("soda", 108),
-            ("cointreau", 4),
-            ("zuckersirup", 22)          
-        ]
-    }, {
-        "name": "London Mule",
-        "image": "img/LondonMule.jpg",
-        "sound": "music/antonop.mp3",
+        "name": "El Salvatore Ganacci",
+        "sound": "music/BTCMoods.mp3",
+        "image": "img/BlessedHodlers.JPG",
         "recipe": [
             ("gin", 46),
             ("lime", 18),
             ("ginger", 136)
         ]
     }, {
+        "name": "It's a Bubble",
+        "sound": "music/10000btc.mp3",
+        "image": "img/BtcBubble.png",
+        "recipe": [
+            ("whisky", 27),
+            ("cola", 173)
+        ]
+    }, {
+        "name": "La Femme Orange",
+        "sound": "music/TheKindUCantAfford.mp3",
+        "image": "img/LesFemmesOrange.JPG",
+        "recipe": [
+            ("grenadine", 20),
+            ("orange", 120),
+            ("tequila", 60)
+        ]
+    }, {
+        "name": "Sats on the beach",
+        "sound": "music/PlebRap.mp3",
+        "image": "img/PlebRap.JPG",
+        "recipe": [
+            ("vodka", 35),
+            ("zuckersirup", 12),
+            ("orange", 68),
+            ("apricot", 17),
+            ("cranberry", 68)
+        ]
+    }, {
+        "name": "Block Driver",
+        "sound": "music/fueruberfiat2.1.mp3",
+        "image": "img/BlockDriver2.jpg",
+        "recipe": [
+            ("grenadine", 17),
+            ("zitrone", 17),
+            ("ginger", 118),
+            ("annanas", 48)
+        ]
+    }, {
+        "name": "21-Island",
+        "sound": "music/Escape221World.mp3",
+        "image": "img/BtcChicks.png",
+        "recipe": [
+            ("sahne", 25),
+            ("rum", 25),
+            ("coconut", 25),
+            ("brum", 25),
+            ("annanas", 100)
+        ]
+    }, {
+        "name": "BitcoinForum Mojito",
+        "sound": "music/VR-Bank.mp3",
+        "image": "img/BTCForumBayern.jpg",
+        "recipe": [
+            ("rum", 40),
+            ("lime", 20),
+            ("zuckersirup", 15),
+            ("soda", 60)
+        ]
+    }, {
+        "name": "Whisky Sour",
+        "sound": "music/iota2.mp3",
+        "image": "img/WhiskySour.png",
+        "recipe": [
+            ("whisky", 47),
+            ("zitrone", 37),
+            ("zuckersirup", 16)
+        ]
+    }, {
+        "name": "Was Bitcoin drinkt",
+        "sound": "music/HodlerSong.mp3",
+        "image": "img/WasBtcDrinkt.png",
+        "recipe": [
+            ("vodka", 46),
+            ("lime", 18),
+            ("ginger", 136)
+        ]
+    }, {
+        "name": "Virgin Colada",
+        "sound": "music/WhatsBtc.mp3",
+        "image": "img/SatsOnTheBeach.png",
+        "recipe": [
+            ("sahne", 25),
+            ("coconut", 25),
+            ("annanas", 150)
+        ]
+    }, {
+        "name": "Lebowski",
+        "sound": "music/Lebowski.mp3",
+        "image": "img/Lebowski.JPG",
+        "recipe": [
+            ("sahne", 33),
+            ("vodka", 34),
+            ("kahlua", 33)
+        ]
+    }, {
+        "name": "Format C",
+        "sound": "music/reckless.mp3",
+        "image": "img/reckless.png",
+        "recipe": [
+            ("gin", 19),
+            ("vodka", 19),
+            ("zitrone", 19),
+            ("zuckersirup", 19),
+            ("tequila", 19),
+            ("cointreau", 10),
+            ("cola", 95)
+        ]
+    }, {
+        "name": "Lightning Lemonade",
+        "sound": "music/Lightning.mp3",
+        "image": "img/LtnLimo.jpg",
+        "recipe": [
+            ("whisky", 22),
+            ("zitrone", 33),
+            ("lime", 11),
+            ("zuckersirup", 22),
+            ("cointreau", 4),
+            ("soda", 108)
+        ]
+    }, {
         "name": "7 tall black women",
-        "image": "img/giacomo.png",
         "sound": "music/giacomo.mp3",
+        "image": "img/giacomo.png",
         "recipe": [
             ("rum", 10),
             ("gin", 20),
@@ -302,85 +199,190 @@ drink_list = [
             ("cola", 40)
         ]
     }, {
+        "name": "CBDC-Zombie",
+        "sound": "music/Richman.mp3",
+        "image": "img/CBDCZombies.jpg",
+        "recipe": [
+            ("gin", 25),
+            ("vodka", 25),
+            ("grenadine", 30),
+            ("zitrone", 17),
+            ("lime", 17),
+            ("blue", 17),
+            ("soda", 69)
+        ]
+    }, {
+        "name": "Bavarian Badger",
+        "sound": "music/Atomic.mp3",
+        "image": "img/badger.jpg",
+        "recipe": [
+            ("gin", 40),
+            ("grenadine", 20),
+            ("tonic", 100),
+            ("lime", 20)
+        ]
+    }, {
+        "name": "HerBitcoin Cocktail",
+        "sound": "music/girlsfun2.mp3",
+        "image": "img/HerBTC.JPG",
+        "recipe": [
+            ("vodka", 58),
+            ("grenadine", 14),
+            ("lime", 14),
+            ("cointreau", 14)
+        ]
+    }, {
+        "name": "Hal Ginny",
+        "sound": "music/BtcJingle.mp3",
+        "image": "img/halfinney.png",
+        "recipe": [
+            ("gin", 40),
+            ("zitrone", 80),
+            ("cola", 80)
+        ]
+    }, {
+        "name": "Noisekiller",
+        "sound": "music/Nodesignal.mp3",
+        "image": "img/noisekiller.png",
+        "recipe": [
+            ("rum", 25),
+            ("whisky", 70),
+            ("brum", 25),
+            ("cranberry", 80)
+        ]
+    }, {
+        "name": "Fomo",
+        "sound": "music/fomo2.mp3",
+        "image": "img/fomo.jpg",
+        "recipe": [
+            ("rum", 53),
+            ("lime", 29),
+            ("zuckersirup", 18)
+        ]
+    }, {
+        "name": "Rübble isch ok",
+        "sound": "music/RuebbleHelga.mp3",
+        "image": "img/ruebble2.jpg",
+        "recipe": [
+            ("zuckersirup", 20),
+            ("ginger", 80),
+            ("soda", 100)
+        ]
+    }, {
+        "name": "Ful Mule",
+        "sound": "music/BtcJingle.mp3",
+        "image": "img/FulMule.jpg",
+        "recipe": [
+            ("whisky", 46),
+            ("lime", 18),
+            ("ginger", 136)
+        ]
+    }, {
+        "name": "Gin Toxic",
+        "sound": "music/saufen2.mp3",
+        "image": "img/toxic21.jpg",
+        "recipe": [
+            ("gin", 63),
+            ("tonic", 116),
+            ("lime", 21)
+        ]
+    }, {
+        "name": "Nasty Ass Honey Badger",
+        "sound": "music/Honeybadger.mp3",
+        "image": "img/honeybadger.jpg",
+        "recipe": [
+            ("rum", 40),
+            ("gin", 80),
+            ("coconut", 20),
+            ("lime", 10),
+            ("cola", 120)
+        ]
+    }, {
+        "name": "JodlHodler",
+        "sound": "music/Jodler.mp3",
+        "image": "img/JodlHodler.png",
+        "recipe": [
+            ("gin", 50),
+            ("zitrone", 30),
+            ("tonic", 50),
+            ("zuckersirup", 20),
+            ("soda", 50)
+        ]
+    }, {
+        "name": "Touch Down",
+        "sound": "music/BtcDrop.mp3",
+        "image": "img/TouchDown.png",
+        "recipe": [
+            ("vodka", 46),
+            ("grenadine", 12),
+            ("zitrone", 24),
+            ("marakuja", 94),
+            ("apricot", 24)
+        ]
+    }, {
+        "name": "Bitcoin Runners Cocktail",
+        "sound": "music/runningman.mp3",
+        "image": "img/Runner.png",
+        "recipe": [
+            ("coconut", 9),
+            ("zitrone", 18),
+            ("brum", 46),
+            ("marakuja", 55),
+            ("annanas", 72)
+        ]
+    }, {
         "name": "Matt Colado",
-        "image": "img/bluematt.png",
         "sound": "music/SatoshiCountry.mp3",
+        "image": "img/bluematt.png",
         "recipe": [
             ("rum", 40),
             ("coconut", 40),
             ("annanas", 120)
         ]
     }, {
-        "name": "nodl!",
-        "image": "img/nodl.jpg",
-        "sound": "music/HodlerSong.mp3",
-        "recipe": [
-            ("whisky", 40),
-            ("lime", 60)
-        ]
-    }, {
-        "name": "Virgin Colada",
-        "image": "img/SatsOnTheBeach.png",
-        "sound": "music/WhatsBtc.mp3",
-        "recipe": [
-            ("coconut", 25),
-            ("annanas", 150),
-            ("sahne", 25)
-        ]
-    }, {
-        "name": "Sh**tcoin's Punch",
-        "image": "img/vob.png",
-        "sound": "music/Umfrage.mp3",
-        "recipe": [
-            ("rum", 40),
-            ("grenadine", 10),
-            ("annanas", 80),
-            ("lime", 10)
-        ]
-    }, {
-        "name": "iota",
-        "image": "img/iota.jpg",
-        "sound": "music/iota.mp3",
-        "recipe": [
-            ("soda", 13)
-        ]
-    }, {
-        "name": "The Starkness",
-        "image": "img/stark.jpg",
-        "sound": "music/BtcDrop.mp3",
+        "name": "Stacking Sats",
+        "sound": "music/StackingSats.mp3",
+        "image": "img/TFTC.png",
         "recipe": [
             ("vodka", 40),
-            ("lime", 60)
+            ("lime", 10),
+            ("soda", 150)
         ]
     }, {
-        "name": "Nick Szabo-oo",
-        "image": "img/nickszabo.jpg",
-        "sound": "music/SatoshiCountry.mp3",
+        "name": "What Bitcoin Did",
+        "sound": "music/obama.mp3",
+        "image": "img/whatbitcoindid.png",
         "recipe": [
-            ("vodka", 20),
-            ("cola", 120)
+            ("rum", 40),
+            ("cola", 160)
+        ]
+    }, {
+        "name": "Screwdriver",
+        "sound": "music/shitcoinrage.mp3",
+        "image": "img/ScrewDriver.png",
+        "recipe": [
+            ("vodka", 66),
+            ("orange", 134)
         ]
     }, {
         "name": "Alex Anarcho",
-        "image": "img/alexanarcho.jpg",
         "sound": "music/alexanarcho.mp3",
+        "image": "img/alexanarcho.jpg",
         "recipe": [
-            ("annanas", 40),
-            ("tonic", 100)
+            ("tonic", 100),
+            ("annanas", 40)
         ]
     }, {
-        "name": "Cuba Libra",
-        "image": "img/CubaLibra.png",
-        "sound": "music/antonop.mp3",
+        "name": "nodl!",
+        "sound": "music/fueruberfiat1.1.mp3",
+        "image": "img/nodl.jpg",
         "recipe": [
-            ("rum", 47),
-            ("lime",12),
-            ("cola", 141)
+            ("whisky", 40)
         ]
     }, {
         "name": "NFT",
-        "image": "img/NFT.png",
-        "sound": "music/tequila.mp3",
+        "sound": "music/NFT.mp3",
+        "image": "img/nft.png",
         "recipe": [
             ("money", "XXX"),
             ("pride", "XXX"),
@@ -389,50 +391,48 @@ drink_list = [
         ]
     }, {
         "name": "FTX",
-        "image": "img/tequila.png",
         "sound": "music/FTX.mp3",
+        "image": "img/ftx_500q.jpg",
         "recipe": [
-            ("gin", 19),
-            ("vodka", 19),
-            ("zitrone", 19),
-            ("cola", 95),
-            ("tequila", 19),
-            ("cointreau", 10),
-            ("zuckersirup", 19)
+            ("gin", 50),
+            ("vodka", 50),
+            ("tequila", 50),
+            ("cointreau", 50),
+            ("lime", 50),
+            ("blue", 30),
+            ("cola", 100)
         ]
     }
 ]
 
-# "NAME":("NICENAME", ISWITHALCOHOL)
+# "Name":("NICENAME", ISWITHALCOHOL)
 ingredients = {
-    "rum": ("Rum", True),
-    "gin": ("Gin", True),
+    "rum": ("weißer Rum", True),
+    "soda": ("Mineralwasser", False),
     "vodka": ("Vodka", True),
     "whisky": ("Whisky", True),
     "grenadine": ("Grenadine", False),
-    "coconut": ("Coco", False),
-    "zitrone": ("Lemonjuice", False),
-    "annanas": ("Pineapple", False),
-    "tonic": ("Tonic", False),
-    "lime": ("Lime", False),
-    "soda": ("Soda", True),
+    "coconut": ("Kokossirup", False),
+    "zitrone": ("Zitronensaft", False),
+    "annanas": ("Ananassaft", False),
+    "tonic": ("Tonic Water", False),
+    "lime": ("Limettensirup", False),
+    "gin": ("Gin", True),
     "cola": ("Cola", False),
-    "brum": ("Tequila", True),
+    "brum": ("brauner Rum", True),
     "kahlua": ("Kahlua", True),
-    "orange": ("Orange", False),
-    "marakuja": ("Marakuja", False),
-    "apricot": ("Apricot", True),
-    "tequila": ("Tequila", True),
+    "orange": ("Orangensaft", False),
+    "marakuja": ("Maracujasaft", False),
+    "apricot": ("Apricot Brandy", True),
+    "tequila": ("Tequila Silver", True),
     "cointreau": ("Cointreau", True),
-    "ginger": ("Ginger", False),
-    "cranberry": ("Cranberry", False),
+    "ginger": ("Ginger Ale", False),
+    "cranberry": ("Cranberrysaft", False),
     "sahne": ("Sahne", False),
-    "blue": ("Blue", False),
+    "blue": ("Blue Curacao", True),
     "zuckersirup": ("Zuckersirup", False),
     "money": ("Money", True),
     "pride": ("Pride", True),
     "fame": ("Fame", True),
     "beauty": ("Beauty", True),
 }
-
-
