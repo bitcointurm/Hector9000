@@ -177,19 +177,18 @@ class MainPanel(Screen):
         print("Lightning:" + str(self.lightning))
 
         if self.lightning:
-            print("Start creating Invoice")
+            print("Get balance:")
             self.balance = payments.get_balance()
             print(self.balance)
             # payment_hash identifies the invoice so we can check the paymentstatus later
             #self.payment_hash = payments.invoice_to_qr()
-            print("Invoice created")
 
         root = BoxLayout(orientation='vertical')
         root2 = BoxLayout()
         
         if self.lightning:
             #root2.add_widget(Image(source='test_img.png'))
-            root2.add_widget(Image(source='payment/lnurl.png'))
+            root2.add_widget(Image(source='payment/lightning_turm_lnurl.png'))
         else:
             root2.add_widget(Image(source='img/empty-glass.png'))
             
@@ -242,11 +241,12 @@ class MainPanel(Screen):
                 popup.dismiss()
                 Clock.schedule_once(partial(self.doGiveDrink, drink), .1)
                 self.event.cancel()
-            elif (self.timer > 60):
+            elif (self.timer > 90):
                 popup.dismiss()
-                Clock.schedule_once( partial( self.doGiveDrink, drink), .1 )
+                #Clock.schedule_once( partial( self.doGiveDrink, drink), .1 )
                 self.event.cancel()
                 self.timer = 0
+                print("payment or user to slow")
             else:
                 time.sleep(1)
                 print("not paid")
@@ -275,11 +275,12 @@ class MainPanel(Screen):
 
 
         def makeDrink(parentwindow):
-            if self.drinkOnScreen[drink]['name'] == 'FTX':
-                for _drink in drink_list:
-                    if _drink['name'] == 'iota':
-                        drinks = _drink
-            elif self.drinkOnScreen[drink]['name'] == 'NFT':
+            if self.drinkOnScreen[drink]["name"] == "FTX":
+                drinks = {
+                    "name": "FTX",
+                    "recipe": [("soda", 10)]
+                }
+            elif self.drinkOnScreen[drink]["name"] == "NFT":
                 random_drink = random.randint(0, len(drink_list)-3)
                 drinks = drink_list[random_drink]
             else:
